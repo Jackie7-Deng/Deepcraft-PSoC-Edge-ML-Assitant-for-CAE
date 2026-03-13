@@ -1,0 +1,55 @@
+[
+  {
+    "id": "faq-compiler-grounded",
+    "query": "为什么语音项目在新环境里编译失败，可能和编译器环境变量有关吗",
+    "min_citations": 2,
+    "expected_status": "grounded_answer",
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\troubleshooting_playbook.md"
+    ],
+    "tool_tags": [
+      "make"
+    ]
+  },
+  {
+    "id": "mtb-generated-source-grounded",
+    "query": "GeneratedSource 为什么不能删除",
+    "min_citations": 2,
+    "expected_status": "grounded_answer",
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\modustoolbox_tools_summary.md"
+    ],
+    "tool_tags": [
+      "device-configurator"
+    ]
+  },
+  {
+    "id": "url-authority-grounded",
+    "query": "当前权威的 DeepCraft 网页 URL 清单是什么",
+    "min_citations": 2,
+    "expected_status": "grounded_answer",
+    "expected_paths": [
+      "knowledge\\deepcraft_web_catalog.md",
+      "knowledge\\retrieval_guide.md"
+    ],
+    "tool_tags": [
+      "deepcraft"
+    ]
+  },
+  {
+    "id": "toolchain-overview-grounded",
+    "query": "ModusToolbox tools package 和 Device Configurator 各自负责什么",
+    "min_citations": 2,
+    "expected_status": "grounded_answer",
+    "expected_paths": [
+      "knowledge\\modustoolbox_tools_summary.md",
+      "knowledge\\faq.md"
+    ],
+    "tool_tags": [
+      "modustoolbox",
+      "device-configurator"
+    ]
+  }
+]

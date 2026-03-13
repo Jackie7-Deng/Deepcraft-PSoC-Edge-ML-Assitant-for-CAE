@@ -1,0 +1,10 @@
+{
+  "model": "hashed-ngram-v1",
+  "dimensions": 384,
+  "chunk_count": 5590,
+  "token_count": 32712,
+  "outputs": {
+    "chunk_vectors": "indexes\\vector_db\\chunk_vectors.jsonl",
+    "token_postings": "indexes\\vector_db\\token_postings.json"
+  }
+}

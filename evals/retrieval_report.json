@@ -1,0 +1,346 @@
+{
+  "total_cases": 8,
+  "hit_count": 8,
+  "hit_rate": 1.0,
+  "failed_cases": [],
+  "cases": [
+    {
+      "id": "mtb-device-configurator-purpose",
+      "query": "Device Configurator 在 PSoC 工程里是做什么的",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\faq.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.110471,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\troubleshooting_playbook.md",
+          "score": 0.972633,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "PSOC_Edge_Machine_Learning_Face_ID_Demo\\bsps\\TARGET_APP_KIT_PSE84_EVAL_EPC2\\README.md",
+          "score": 1.501427,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.280218,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "PSOC_Edge_Machine_Learning_Face_ID_Demo\\bsps\\TARGET_APP_KIT_PSE84_EVAL_EPC2\\README.md",
+          "score": 1.485192,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        }
+      ]
+    },
+    {
+      "id": "mtb-generated-source",
+      "query": "GeneratedSource 为什么不能删除",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\modustoolbox_tools_summary.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\troubleshooting_playbook.md",
+          "score": 0.883066,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 0.899571,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.065713,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.349537,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.351237,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        }
+      ]
+    },
+    {
+      "id": "mtb-bsp-target",
+      "query": "BSP 和 TARGET 为什么要先确认",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\parameters_catalog.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.364511,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.070197,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\modustoolbox_tools_summary.md",
+          "score": 0.70426,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
+          "score": 0.595676,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "PSOC_Edge_Machine_Learning_Face_ID_Demo\\common.mk",
+          "score": 0.644625,
+          "doc_class": "other",
+          "evidence_tier": "other"
+        }
+      ]
+    },
+    {
+      "id": "compiler-env-migration",
+      "query": "新环境编不过可能是编译器环境变量没配好吗",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\troubleshooting_playbook.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.377083,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.051932,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\modustoolbox_tools_summary.md",
+          "score": 0.373773,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "evals\\retrieval_cases.json",
+          "score": 0.293158,
+          "doc_class": "other",
+          "evidence_tier": "other"
+        },
+        {
+          "path": "README_DEEPCRAFT_Deploy_Motion.md",
+          "score": 0.334464,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        }
+      ]
+    },
+    {
+      "id": "ml-workflow-integration",
+      "query": "DEEPCRAFT 生成代码之后怎么集成到 ModusToolbox 工程",
+      "hit": true,
+      "matched_path": "knowledge\\modustoolbox_tools_summary.md",
+      "expected_paths": [
+        "knowledge\\summary_ml_modustoolbox.md",
+        "knowledge\\ml_workflow.md",
+        "knowledge\\modustoolbox_tools_summary.md"
+      ],
+      "top_results": [
+        {
+          "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
+          "score": 1.725852,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
+          "score": 1.815125,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
+          "score": 1.572701,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
+          "score": 1.925279,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
+        },
+        {
+          "path": "knowledge\\modustoolbox_tools_summary.md",
+          "score": 1.505637,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        }
+      ]
+    },
+    {
+      "id": "tensor-arena",
+      "query": "tensor arena 大小应该看哪里",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\ml_workflow.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.018121,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\ml_workflow.md",
+          "score": 1.041461,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.161225,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 0.669133,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 0.695148,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        }
+      ]
+    },
+    {
+      "id": "edge-api-queue",
+      "query": "为什么 Edge API 有时是 Queue API",
+      "hit": true,
+      "matched_path": "knowledge\\faq.md",
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "ingest\\html\\edge_api.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.341131,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "ingest\\html\\deepcraft-studio_getting-started_infineon-boards_psoc-edge-e84-eval-kit.md",
+          "score": 0.925081,
+          "doc_class": "web_mirror",
+          "evidence_tier": "primary_web"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.103751,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.085592,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "knowledge\\faq.md",
+          "score": 1.075902,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        }
+      ]
+    },
+    {
+      "id": "authoritative-url-list",
+      "query": "当前权威的 DeepCraft 网页 URL 清单是什么",
+      "hit": true,
+      "matched_path": "knowledge\\deepcraft_web_catalog.md",
+      "expected_paths": [
+        "knowledge\\retrieval_guide.md",
+        "knowledge\\deepcraft_web_catalog.md"
+      ],
+      "top_results": [
+        {
+          "path": "knowledge\\deepcraft_web_catalog.md",
+          "score": 1.168907,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "ingest\\html\\deepcraft-studio_data-preparation_bring-your-data.md",
+          "score": 1.122878,
+          "doc_class": "web_mirror",
+          "evidence_tier": "primary_web"
+        },
+        {
+          "path": "knowledge\\deepcraft_web_backfill_20260310.md",
+          "score": 1.092411,
+          "doc_class": "knowledge_summary",
+          "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "ingest\\html\\deepcraft-studio_getting-started_graph-ux.md",
+          "score": 1.115061,
+          "doc_class": "web_mirror",
+          "evidence_tier": "primary_web"
+        },
+        {
+          "path": "ingest\\urls_checked.txt",
+          "score": 0.996745,
+          "doc_class": "other",
+          "evidence_tier": "other"
+        }
+      ]
+    }
+  ]
+}

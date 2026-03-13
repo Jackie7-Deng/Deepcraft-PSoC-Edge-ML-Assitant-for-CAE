@@ -1,0 +1,32 @@
+# Temporary files
+*.tmp
+*.temp
+temp_*.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+build/
+*.o
+*.bin
+*.elf
+*.hex
+
+# Dependencies (if any)
+node_modules/
+venv/
+__pycache__/
+
+# Large model files (optional - uncomment if needed)
+# *.tflite
+# *.h5
+# *.pt

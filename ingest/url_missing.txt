@@ -1,0 +1,7 @@
+# DEEPCRAFT 抓取失败 URL 清单
+# 生成时间: 2026-03-10T15:52:16Z
+# 权威源: ingest/urls_checked.txt
+# 格式: URL | 原因 | HTTP
+
+https://developer.imagimob.com/deepcraft-studio/getting-started/accelerators | HTTP 404 | HTTP 404
+https://developer.imagimob.com/deepcraft-studio/getting-started/project-templates | HTTP 404 | HTTP 404

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(do cp:*)",
+      "Bash(ls:*)",
+      "Bash(pip show:*)",
+      "Bash(pdftotext:*)",
+      "WebSearch",
+      "Bash(xargs -I {} basename {})",
+      "Bash(mv:*)"
+    ]
+  }
+}

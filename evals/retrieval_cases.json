@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mtb-device-configurator-purpose",
+    "query": "Device Configurator 在 PSoC 工程里是做什么的",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\modustoolbox_tools_summary.md",
+      "knowledge\\faq.md"
+    ],
+    "tool_tags": [
+      "device-configurator"
+    ]
+  },
+  {
+    "id": "mtb-generated-source",
+    "query": "GeneratedSource 为什么不能删除",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\modustoolbox_tools_summary.md"
+    ],
+    "tool_tags": [
+      "device-configurator"
+    ]
+  },
+  {
+    "id": "mtb-bsp-target",
+    "query": "BSP 和 TARGET 为什么要先确认",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\modustoolbox_tools_summary.md",
+      "knowledge\\parameters_catalog.md"
+    ],
+    "tool_tags": [
+      "modustoolbox"
+    ]
+  },
+  {
+    "id": "compiler-env-migration",
+    "query": "新环境编不过可能是编译器环境变量没配好吗",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\troubleshooting_playbook.md"
+    ],
+    "tool_tags": [
+      "make"
+    ]
+  },
+  {
+    "id": "ml-workflow-integration",
+    "query": "DEEPCRAFT 生成代码之后怎么集成到 ModusToolbox 工程",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\summary_ml_modustoolbox.md",
+      "knowledge\\ml_workflow.md",
+      "knowledge\\modustoolbox_tools_summary.md"
+    ],
+    "tool_tags": [
+      "deepcraft",
+      "modustoolbox"
+    ]
+  },
+  {
+    "id": "tensor-arena",
+    "query": "tensor arena 大小应该看哪里",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "knowledge\\ml_workflow.md"
+    ]
+  },
+  {
+    "id": "edge-api-queue",
+    "query": "为什么 Edge API 有时是 Queue API",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\faq.md",
+      "ingest\\html\\edge_api.md"
+    ],
+    "tool_tags": [
+      "deepcraft"
+    ]
+  },
+  {
+    "id": "authoritative-url-list",
+    "query": "当前权威的 DeepCraft 网页 URL 清单是什么",
+    "top_k": 5,
+    "expected_paths": [
+      "knowledge\\retrieval_guide.md",
+      "knowledge\\deepcraft_web_catalog.md"
+    ],
+    "tool_tags": [
+      "deepcraft"
+    ]
+  }
+]

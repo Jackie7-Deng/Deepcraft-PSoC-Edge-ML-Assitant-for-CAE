@@ -1,0 +1,84 @@
+{
+  "total_cases": 4,
+  "ok_count": 4,
+  "ok_rate": 1.0,
+  "failed_cases": [],
+  "cases": [
+    {
+      "id": "faq-compiler-grounded",
+      "query": "为什么语音项目在新环境里编译失败，可能和编译器环境变量有关吗",
+      "ok": true,
+      "status": "grounded_answer",
+      "strong_evidence_count": 6,
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\troubleshooting_playbook.md"
+      ],
+      "actual_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\faq.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\faq.md",
+        "knowledge\\faq.md",
+        "README_Device_Audio_Recorder.md"
+      ]
+    },
+    {
+      "id": "mtb-generated-source-grounded",
+      "query": "GeneratedSource 为什么不能删除",
+      "ok": true,
+      "status": "grounded_answer",
+      "strong_evidence_count": 6,
+      "expected_paths": [
+        "knowledge\\faq.md",
+        "knowledge\\modustoolbox_tools_summary.md"
+      ],
+      "actual_paths": [
+        "knowledge\\troubleshooting_playbook.md",
+        "knowledge\\faq.md",
+        "knowledge\\faq.md",
+        "knowledge\\faq.md",
+        "knowledge\\faq.md",
+        "knowledge\\faq.md"
+      ]
+    },
+    {
+      "id": "url-authority-grounded",
+      "query": "当前权威的 DeepCraft 网页 URL 清单是什么",
+      "ok": true,
+      "status": "grounded_answer",
+      "strong_evidence_count": 4,
+      "expected_paths": [
+        "knowledge\\deepcraft_web_catalog.md",
+        "knowledge\\retrieval_guide.md"
+      ],
+      "actual_paths": [
+        "knowledge\\deepcraft_web_catalog.md",
+        "ingest\\html\\deepcraft-studio_data-preparation_bring-your-data.md",
+        "knowledge\\deepcraft_web_backfill_20260310.md",
+        "ingest\\html\\deepcraft-studio_getting-started_graph-ux.md",
+        "ingest\\urls_checked.txt",
+        "ingest\\urls_checked.txt"
+      ]
+    },
+    {
+      "id": "toolchain-overview-grounded",
+      "query": "ModusToolbox tools package 和 Device Configurator 各自负责什么",
+      "ok": true,
+      "status": "grounded_answer",
+      "strong_evidence_count": 6,
+      "expected_paths": [
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\faq.md"
+      ],
+      "actual_paths": [
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\modustoolbox_tools_summary.md",
+        "knowledge\\faq.md"
+      ]
+    }
+  ]
+}

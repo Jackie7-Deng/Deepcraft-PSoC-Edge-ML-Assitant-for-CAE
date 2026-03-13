@@ -1,0 +1,73 @@
+{
+  "workspace": ".",
+  "file_count": 418,
+  "chunk_count": 5590,
+  "symbol_count": 14245,
+  "source_type_counts": {
+    "init": 5,
+    "skill": 4,
+    "readme": 36,
+    "other": 168,
+    "root_doc": 3,
+    "governance": 2,
+    "web": 127,
+    "knowledge": 28,
+    "generated_info": 5,
+    "source": 21,
+    "memory": 1,
+    "prompt": 4,
+    "example_doc": 2,
+    "script": 12
+  },
+  "metadata_counts": {
+    "doc_class": {
+      "assistant_control": 13,
+      "readme": 36,
+      "other": 168,
+      "root_doc": 3,
+      "governance": 3,
+      "web_mirror": 127,
+      "knowledge_summary": 28,
+      "generated_info": 5,
+      "source_code": 21,
+      "example_doc": 2,
+      "tooling": 12
+    },
+    "evidence_tier": {
+      "assistant_control": 13,
+      "primary_doc": 38,
+      "other": 168,
+      "root_doc": 3,
+      "governance": 3,
+      "primary_web": 127,
+      "curated_summary": 28,
+      "generated_artifact": 5,
+      "primary_code": 21,
+      "tooling": 12
+    },
+    "platform_tags": {
+      "psoc-edge": 188,
+      "psoc6": 87
+    },
+    "tool_tags": {
+      "deepcraft": 249,
+      "ml-configurator": 16,
+      "modustoolbox": 116,
+      "make": 212,
+      "device-configurator": 91
+    },
+    "domain_tags": {
+      "deployment": 171,
+      "training": 158,
+      "troubleshooting": 193,
+      "imu": 124,
+      "vision": 292,
+      "audio": 110
+    }
+  },
+  "outputs": {
+    "text_chunks": "indexes\\text_chunks.jsonl",
+    "symbol_index": "indexes\\symbol_index.json",
+    "processed_files": "indexes\\processed_files.json"
+  }
+}
