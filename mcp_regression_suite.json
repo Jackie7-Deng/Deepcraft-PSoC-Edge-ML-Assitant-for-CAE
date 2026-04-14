@@ -1,0 +1,74 @@
+{
+  "cases": [
+    {
+      "id": "comm-mtbml-deploy",
+      "mode": "community",
+      "query": "PSoC Edge MTBML model deploy",
+      "min_results": 3,
+      "limit": 5
+    },
+    {
+      "id": "comm-build-error",
+      "mode": "community",
+      "query": "PSoC 6 ModusToolbox build error",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "comm-face-id",
+      "mode": "community",
+      "query": "PSoC Edge Face ID demo",
+      "min_results": 3,
+      "limit": 5
+    },
+    {
+      "id": "comm-memory-placement",
+      "mode": "community",
+      "query": "PSoC Edge memory placement",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "comm-smif-xip",
+      "mode": "community",
+      "query": "PSoC Edge SMIF XIP external flash",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "msd-inference-accuracy",
+      "mode": "case",
+      "query": "PSoC Edge ML inference accuracy",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "msd-programming-failed",
+      "mode": "case",
+      "query": "PSoC 6 ModusToolbox programming failed KitProg",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "msd-memory-limitation",
+      "mode": "case",
+      "query": "PSoC machine learning RAM flash size limitation",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "msd-memory-placement",
+      "mode": "case",
+      "query": "PSoC Edge external flash memory placement",
+      "min_results": 1,
+      "limit": 5
+    },
+    {
+      "id": "msd-deepcraft-vision",
+      "mode": "case",
+      "query": "PSoC Edge DEEPCRAFT deploy vision model issue",
+      "min_results": 1,
+      "limit": 5
+    }
+  ]
+}

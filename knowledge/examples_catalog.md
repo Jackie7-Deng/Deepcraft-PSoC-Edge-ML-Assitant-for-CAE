@@ -1,8 +1,10 @@
 # 示例工程目录
 
-**更新日期**: 2026-03-08
+**更新日期**: 2026-03-25
 
 ---
+
+> 说明：示例 README 已统一以 `docs/readmes/` 下的归档副本作为引用入口。
 
 ## 1. 机器学习
 
@@ -10,7 +12,7 @@
 | 属性 | 值 |
 |------|-----|
 | **工程路径** | `Machine_Learning_Imagimob_MTBML_Deploy/` |
-| **README** | `README_mtb-example-ml-imagimob-mtbml-deploy.md` |
+| **README** | `docs/readmes/README_mtb-example-ml-imagimob-mtbml-deploy.md` |
 | **目标硬件** | CY8CKIT-062S2-AI (PSoC 6) |
 | **功能描述** | 演示如何将 Imagimob/DEEPCRAFT 训练的模型部署到 ModusToolbox 工程 |
 | **ML 类型** | IMU 分类 + PDM 音频分类 |
@@ -23,7 +25,7 @@
 | 属性 | 值 |
 |------|-----|
 | **工程路径** | `PSOC_Edge_Machine_Learning_Face_ID_Demo/` |
-| **README** | `README_Machine_Learning_Face_ID_Demo.md` |
+| **README** | `docs/readmes/README_Machine_Learning_Face_ID_Demo.md` |
 | **目标硬件** | KIT_PSE84_EVAL_EPC2 (PSoC Edge E84) |
 | **功能描述** | 人脸检测与识别演示，使用 NPU 加速 |
 | **ML 类型** | 视觉 - 人脸检测/识别 |
@@ -38,17 +40,17 @@
 ### 2.1 数据采集
 | README | 描述 |
 |--------|------|
-| `README_DEEPCRAFT_Data_Collection.md` | DEEPCRAFT Studio 数据采集指南 |
+| `docs/readmes/README_DEEPCRAFT_Data_Collection.md` | DEEPCRAFT Studio 数据采集指南 |
 
 ### 2.2 运动模型部署
 | README | 描述 |
 |--------|------|
-| `README_DEEPCRAFT_Deploy_Motion.md` | IMU/运动传感器模型部署 |
+| `docs/readmes/README_DEEPCRAFT_Deploy_Motion.md` | IMU/运动传感器模型部署 |
 
 ### 2.3 视觉模型部署
 | README | 描述 |
 |--------|------|
-| `README_DEEPCRAFT_Deploy_Vision.md` | 摄像头/视觉模型部署 |
+| `docs/readmes/README_DEEPCRAFT_Deploy_Vision.md` | 摄像头/视觉模型部署 |
 
 ---
 
@@ -57,22 +59,24 @@
 ### 3.1 音频增强
 | README | 描述 |
 |--------|------|
-| `README_Audio_Enhancement.md` | 音频增强/降噪处理 |
+| `docs/readmes/README_Audio_Enhancement.md` | 音频增强/降噪处理 |
 
 ### 3.2 设备音频录制
 | README | 描述 |
 |--------|------|
-| `README_Device_Audio_Recorder.md` | PDM/I2S 音频录制 |
+| `docs/readmes/README_Device_Audio_Recorder.md` | PDM/I2S 音频录制 |
 
 ### 3.3 语音助手
 | README | 描述 |
 |--------|------|
-| `README_Voice_Assistant_Deployment.md` | 语音助手唤醒词/命令词 |
+| `docs/readmes/README_Voice_Assistant_Deployment.md` | 语音助手唤醒词/命令词 |
 
 ### 3.4 异常振动检测
 | README | 描述 |
 |--------|------|
-| `README_AnomalousVibrationDetection.md` | 基于振动/声音的异常检测 |
+| `docs/readmes/README_AnomalousVibrationDetection.md` | 基于振动/声音的异常检测 |
+
+补充训练资料：`docs/机器震动异常检测模型训练指南.md`
 
 ---
 
@@ -81,17 +85,17 @@
 ### 4.1 LVGL Smartwatch Demo
 | README | 描述 |
 |--------|------|
-| `README_LVGL_Smartwatch_Demo.md` | LVGL 智能手表 GUI 演示，支持 AMOLED 圆屏 |
+| `docs/readmes/README_LVGL_Smartwatch_Demo.md` | LVGL 智能手表 GUI 演示，支持 AMOLED 圆屏 |
 
 ### 4.2 VGLite API
 | README | 描述 |
 |--------|------|
-| `README_Graphics_using_VGLite_API.md` | VGLite 2D 图形 API |
+| `docs/readmes/README_Graphics_using_VGLite_API.md` | VGLite 2D 图形 API |
 
 ### 4.3 显示驱动
 | README | 描述 |
 |--------|------|
-| `README_Waveshare_Display_Driver.md` | Waveshare 4.3" DSI 显示屏驱动库 |
+| `docs/readmes/README_Waveshare_Display_Driver.md` | Waveshare 4.3" DSI 显示屏驱动库 |
 
 ---
 
@@ -100,17 +104,17 @@
 ### 5.1 空应用模板
 | README | 描述 |
 |--------|------|
-| `README_Empty_Application.md` | 基础工程模板 |
+| `docs/readmes/README_Empty_Application.md` | 基础工程模板 |
 
 ### 5.2 UART DMA
 | README | 描述 |
 |--------|------|
-| `README_UART_transmit_and_receive_with_DMA.md` | UART DMA 收发 |
+| `docs/readmes/README_UART_transmit_and_receive_with_DMA.md` | UART DMA 收发 |
 
 ### 5.3 文件系统
 | README | 描述 |
 |--------|------|
-| `README_device_File_system_FreeRTOS.md` | FreeRTOS + 文件系统 |
+| `docs/readmes/README_device_File_system_FreeRTOS.md` | FreeRTOS + 文件系统 |
 
 ---
 
@@ -126,4 +130,4 @@
 
 ---
 
-*更新日期: 2026-03-08*
+*更新日期: 2026-03-25*

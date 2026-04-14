@@ -538,6 +538,28 @@
     ]
   },
   {
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "sha1": "877f15e99cbc98728001634f6be26de5b4d4e920",
+    "size": 8306,
+    "source_type": "root_doc",
+    "chunk_count": 27,
+    "symbol_count": 27,
+    "doc_class": "root_doc",
+    "evidence_tier": "root_doc",
+    "platform_tags": [
+      "psoc6"
+    ],
+    "tool_tags": [
+      "deepcraft",
+      "modustoolbox"
+    ],
+    "domain_tags": [
+      "training",
+      "troubleshooting",
+      "imu"
+    ]
+  },
+  {
     "path": "evals\\grounded_answer_cases.json",
     "sha1": "c0696342b3e7565adf1f0406eed3cf487a8a8cbc",
     "size": 1471,
@@ -559,8 +581,8 @@
   },
   {
     "path": "evals\\grounded_answer_report.json",
-    "sha1": "1dce8702cd012726a4b3c89786cfd16af1aa6d9b",
-    "size": 2674,
+    "sha1": "27620d9d3e4b4265c6f0a078b66f7740a09fbd2d",
+    "size": 2689,
     "source_type": "other",
     "chunk_count": 3,
     "symbol_count": 0,
@@ -601,8 +623,8 @@
   },
   {
     "path": "evals\\retrieval_report.json",
-    "sha1": "b8934ece6569e22ce56d812d4900e7fe203db1e3",
-    "size": 10722,
+    "sha1": "0232a4f2d64b820bd358650e78a4b977b2167196",
+    "size": 10740,
     "source_type": "other",
     "chunk_count": 10,
     "symbol_count": 0,
@@ -642,11 +664,11 @@
   },
   {
     "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
-    "sha1": "301af01f7fea70613e20a3433ba3b81837101e99",
-    "size": 8373,
+    "sha1": "d92b2e7dc714a31bcaf210f48c32683baefaffd3",
+    "size": 10930,
     "source_type": "governance",
-    "chunk_count": 21,
-    "symbol_count": 21,
+    "chunk_count": 26,
+    "symbol_count": 26,
     "doc_class": "governance",
     "evidence_tier": "governance",
     "platform_tags": [],
@@ -663,8 +685,8 @@
   },
   {
     "path": "governance\\CURRENT_STATUS.md",
-    "sha1": "9f721c07aeed643daea4744093728c08e866efbd",
-    "size": 4682,
+    "sha1": "278eab121e956389f00d20c24d7eb67620503546",
+    "size": 5424,
     "source_type": "governance",
     "chunk_count": 6,
     "symbol_count": 6,
@@ -3458,8 +3480,8 @@
   },
   {
     "path": "knowledge\\deepcraft_web_backfill_20260310.md",
-    "sha1": "c42027e35f311c77c8d1bb7436d494d2ab919bfc",
-    "size": 8714,
+    "sha1": "0f94d1c2ee69e015e15a57c327703e8d9b321c69",
+    "size": 8871,
     "source_type": "knowledge",
     "chunk_count": 13,
     "symbol_count": 13,
@@ -3482,8 +3504,8 @@
   },
   {
     "path": "knowledge\\deepcraft_web_catalog.md",
-    "sha1": "519f9028c8f95b14353d75b9da84077f8eb1fd74",
-    "size": 3740,
+    "sha1": "6f34ab686a7f7e7e55c2e7a4c706f10be449b220",
+    "size": 3868,
     "source_type": "knowledge",
     "chunk_count": 7,
     "symbol_count": 7,
@@ -3501,8 +3523,8 @@
   },
   {
     "path": "knowledge\\document_map.md",
-    "sha1": "59722d2a5ced0b550684d60a041018dc38c29f4a",
-    "size": 2644,
+    "sha1": "dc32e4388242694a279065de05b8b0c903fb276e",
+    "size": 3016,
     "source_type": "knowledge",
     "chunk_count": 5,
     "symbol_count": 5,
@@ -3523,8 +3545,8 @@
   },
   {
     "path": "knowledge\\examples_catalog.md",
-    "sha1": "9197d1ba9bfe51cf06ca70e9a381f2e47da1a345",
-    "size": 3671,
+    "sha1": "e42e7c5e739bfec49f1112480d1527da87b5648c",
+    "size": 4040,
     "source_type": "knowledge",
     "chunk_count": 22,
     "symbol_count": 22,
@@ -3655,8 +3677,8 @@
   },
   {
     "path": "knowledge\\ml_workflow.md",
-    "sha1": "91a0fdd7ae839e1d3d14753ba9393e417958f7ac",
-    "size": 7532,
+    "sha1": "99fc0bae9eb4656d15689924f2859f3e1547c5c2",
+    "size": 7691,
     "source_type": "knowledge",
     "chunk_count": 16,
     "symbol_count": 16,
@@ -3708,8 +3730,8 @@
   },
   {
     "path": "knowledge\\overview.md",
-    "sha1": "9d55842461eeb69cd91fc87f428ca42191d9d3aa",
-    "size": 3700,
+    "sha1": "689562f1fff5f51eb0a2910bbc45d6bcf2c3127a",
+    "size": 3983,
     "source_type": "knowledge",
     "chunk_count": 8,
     "symbol_count": 8,
@@ -3756,9 +3778,33 @@
     ]
   },
   {
+    "path": "knowledge\\ready_models_catalog.md",
+    "sha1": "83ceaabdf706456ca2a697f9cee3c9a3062de3cf",
+    "size": 5868,
+    "source_type": "knowledge",
+    "chunk_count": 9,
+    "symbol_count": 9,
+    "doc_class": "knowledge_summary",
+    "evidence_tier": "curated_summary",
+    "platform_tags": [
+      "psoc-edge",
+      "psoc6"
+    ],
+    "tool_tags": [
+      "deepcraft"
+    ],
+    "domain_tags": [
+      "deployment",
+      "training",
+      "troubleshooting",
+      "audio",
+      "imu"
+    ]
+  },
+  {
     "path": "knowledge\\retrieval_guide.md",
-    "sha1": "2f629225c38c6ec47ff675eacdf1d0679ebf8b97",
-    "size": 4477,
+    "sha1": "579fc7b7732ef33186294924d6cf824957d6a69b",
+    "size": 5153,
     "source_type": "knowledge",
     "chunk_count": 6,
     "symbol_count": 6,
@@ -3900,11 +3946,11 @@
   },
   {
     "path": "knowledge\\update_workflow.md",
-    "sha1": "c85eeb1ebffb57302d0fbb954fa202066ae29098",
-    "size": 5669,
+    "sha1": "7585f162565b71153df2c1f528600aa57b8bc366",
+    "size": 5947,
     "source_type": "knowledge",
-    "chunk_count": 71,
-    "symbol_count": 71,
+    "chunk_count": 73,
+    "symbol_count": 73,
     "doc_class": "knowledge_summary",
     "evidence_tier": "curated_summary",
     "platform_tags": [],
@@ -3920,8 +3966,8 @@
   },
   {
     "path": "knowledge\\usage_guide.md",
-    "sha1": "9756400500cf282d45be7e8ec0e70057e76f9bd9",
-    "size": 5366,
+    "sha1": "150e32018cd964c41f352d66672858c7cc1c2173",
+    "size": 5432,
     "source_type": "knowledge",
     "chunk_count": 21,
     "symbol_count": 21,
@@ -7865,8 +7911,8 @@
   },
   {
     "path": "README.md",
-    "sha1": "57452a34ec24c0273a434145812b48f97a9b7790",
-    "size": 4272,
+    "sha1": "54fbffcf5d13b7286926cdf7f6b0ab01ef9b2ad4",
+    "size": 4429,
     "source_type": "root_doc",
     "chunk_count": 13,
     "symbol_count": 13,
@@ -7883,375 +7929,6 @@
     ],
     "domain_tags": [
       "troubleshooting"
-    ]
-  },
-  {
-    "path": "README_AnomalousVibrationDetection.md",
-    "sha1": "38ba34f92fa58f5acbfcf6fdbac00bc465882dc9",
-    "size": 9868,
-    "source_type": "readme",
-    "chunk_count": 12,
-    "symbol_count": 11,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc6"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Audio_Enhancement.md",
-    "sha1": "50af8d774158bc8b699b5fda5c7c1d2d4e81c4c7",
-    "size": 16796,
-    "source_type": "readme",
-    "chunk_count": 12,
-    "symbol_count": 11,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "sha1": "6dcc9bfa6e08461e588b66080b4f883dc5e37afc",
-    "size": 18631,
-    "source_type": "readme",
-    "chunk_count": 16,
-    "symbol_count": 16,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge",
-      "psoc6"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "sha1": "904fd463f34cf8621907883414685b87f51f6c86",
-    "size": 16458,
-    "source_type": "readme",
-    "chunk_count": 11,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge",
-      "psoc6"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "sha1": "0f300774a2b40975cd6ebdad4678a89740116181",
-    "size": 16056,
-    "source_type": "readme",
-    "chunk_count": 11,
-    "symbol_count": 11,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Device_Audio_Recorder.md",
-    "sha1": "91b1eaa44650e0d1978cfdb76d0e1178d1a38542",
-    "size": 14685,
-    "source_type": "readme",
-    "chunk_count": 11,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_device_File_system_FreeRTOS.md",
-    "sha1": "3ed5d89b220f877ecd6f7cf3a3aa3a185d50f953",
-    "size": 13753,
-    "source_type": "readme",
-    "chunk_count": 11,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Empty_Application.md",
-    "sha1": "530e76ba8a956e105191febff6686cb453e53721",
-    "size": 11942,
-    "source_type": "readme",
-    "chunk_count": 10,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Graphics_using_VGLite_API.md",
-    "sha1": "44ceac8860aecd58634c4ee258d207c1b62a909e",
-    "size": 17077,
-    "source_type": "readme",
-    "chunk_count": 13,
-    "symbol_count": 12,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_LVGL_Smartwatch_Demo.md",
-    "sha1": "319106b8688f17537917b440bcc6f4ec0a46d55b",
-    "size": 9927,
-    "source_type": "readme",
-    "chunk_count": 10,
-    "symbol_count": 4,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "device-configurator"
-    ],
-    "domain_tags": [
-      "vision"
-    ]
-  },
-  {
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "sha1": "946bece5cb31ffb8e0fa213b6bea0f920e3776a2",
-    "size": 19759,
-    "source_type": "readme",
-    "chunk_count": 14,
-    "symbol_count": 12,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "sha1": "16175cd973b5a591447f83620873bb10ca1d93bd",
-    "size": 32482,
-    "source_type": "readme",
-    "chunk_count": 24,
-    "symbol_count": 20,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc6"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "ml-configurator",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "sha1": "865974ad5722baeba742143f023dabed03ae695f",
-    "size": 12198,
-    "source_type": "readme",
-    "chunk_count": 10,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Voice_Assistant_Deployment.md",
-    "sha1": "1e6757caa3ba04f0c192e85d93ce94bb288507cd",
-    "size": 14905,
-    "source_type": "readme",
-    "chunk_count": 10,
-    "symbol_count": 10,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "deepcraft",
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "audio",
-      "imu"
-    ]
-  },
-  {
-    "path": "README_Waveshare_Display_Driver.md",
-    "sha1": "23f471bcbc100703df97d44def1c78c70f62aa51",
-    "size": 19303,
-    "source_type": "readme",
-    "chunk_count": 14,
-    "symbol_count": 11,
-    "doc_class": "readme",
-    "evidence_tier": "primary_doc",
-    "platform_tags": [
-      "psoc-edge"
-    ],
-    "tool_tags": [
-      "modustoolbox",
-      "make"
-    ],
-    "domain_tags": [
-      "deployment",
-      "training",
-      "troubleshooting",
-      "vision",
-      "imu"
     ]
   },
   {
@@ -8331,11 +8008,11 @@
   },
   {
     "path": "scripts\\rag_index_lib.py",
-    "sha1": "61c2f37e993ce9104486d3d99ef902e9d0564e10",
-    "size": 40366,
+    "sha1": "557f0fa2ac76a58824f6d3d8db025344b82b0889",
+    "size": 41972,
     "source_type": "script",
-    "chunk_count": 31,
-    "symbol_count": 53,
+    "chunk_count": 33,
+    "symbol_count": 54,
     "doc_class": "tooling",
     "evidence_tier": "tooling",
     "platform_tags": [

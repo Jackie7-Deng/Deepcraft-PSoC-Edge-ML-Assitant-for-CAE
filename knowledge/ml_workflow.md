@@ -1,6 +1,6 @@
 # ML 工作流程指南
 
-**更新日期**: 2026-03-08
+**更新日期**: 2026-03-25
 
 ---
 
@@ -41,7 +41,7 @@
 4. 采集多场景数据
 
 **参考**:
-- `README_DEEPCRAFT_Data_Collection.md`
+- `docs/readmes/README_DEEPCRAFT_Data_Collection.md`
 - `docs/readmes/README_Device_Audio_Recorder.md` (音频)
 
 **关键参数**:
@@ -132,6 +132,16 @@ mtb_ml_gen/
 **关键文件**:
 - `*_tensor_arena_size.txt` - 内存分配依据
 
+### 2.6.1 DEEPCRAFT Model Converter 的当前本地口径
+
+- 支持 **GUI** 与 **CLI**
+- 当前资料直接写有输入格式：`.h5`、`.tflite`、`.pt2`
+- 当前资料直接写有目标设备：`PSoC 6`、`PSoC Edge M33/NNLite`、`PSoC Edge M55/U55`
+- 支持 conversion、optimization、validation，且可在 desktop 做 validation
+- 运行平台为 Windows / Linux / Mac
+
+证据：`docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#3` `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#4` `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#6`
+
 ---
 
 ### 2.7 ModusToolbox 工程准备与集成
@@ -142,10 +152,13 @@ mtb_ml_gen/
 2. 打开 Device Configurator，先清 `Notice List`，再检查 Pins / System / Peripherals / DMA / Clocks。`docs\MTB_docs\device-configurator.pdf#11` `docs\MTB_docs\device-configurator.pdf#49`
 3. 保存配置，确认 `GeneratedSource` 已进入构建。`docs\MTB_docs\device-configurator.pdf#11`
 4. 复制 `mtb_ml_gen/` 到工程目录。
-5. 配置 `Makefile` 包含源文件，并同步核对模型名、目录、推理引擎等关键参数。`knowledge\faq.md:41-66`
-6. 设置 tensor arena 大小。
-7. 调用推理 API。
-8. 用 `make build` / `make program` 做最小验证。`docs\MTB_docs\infineon-modustoolbox-tools-package-user-guide-gettingstarted-en.pdf#44`
+5. 如果走 BYOM / Model Converter，先确认 converter 目标设备与输出工件是否匹配当前 BSP，再进入 ModusToolbox 集成。`docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#4`
+6. 配置 `Makefile` 包含源文件，并同步核对模型名、目录、推理引擎等关键参数。`knowledge\faq.md:41-66`
+7. 设置 tensor arena 大小。
+8. 调用推理 API。
+9. 用 `make build` / `make program` 做最小验证。`docs\MTB_docs\infineon-modustoolbox-tools-package-user-guide-gettingstarted-en.pdf#44`
+
+如果问题属于 Ready Model 的申请方式、收费、测试报告或快速上板路径，优先看 `knowledge/ready_models_catalog.md`。
 
 **代码示例**:
 ```c

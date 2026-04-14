@@ -37,6 +37,8 @@ DOMAIN_SYNONYMS = {
     "psoc edge": ["psoc", "edge", "e84", "e8x", "kit_pse84_eval", "pse84"],
     "psoc 6": ["cy8ckit-062s2-ai", "062s2-ai", "psoc6"],
     "deepcraft": ["imagimob", "studio", "deepcraft studio"],
+    "ready model": ["ready models", "test report", "model report", "static library", "precompiled binary", "binary/hex", "hex"],
+    "factory alarm detection": ["factory alarms and sirens", "factory alarm", "alarm detection", "alarm ready model"],
     "modustoolbox": ["mtb", "modus toolbox", "dashboard", "project creator"],
     "device configurator": ["design.modus", "generatedsource", "generated source", "notice list", "pins", "clocks", "peripherals", "dma"],
     "machine learning configurator": ["ml configurator", "machine learning", "library level configuration", "library configurator", "mtb ml"],
@@ -44,6 +46,9 @@ DOMAIN_SYNONYMS = {
     "构建": ["build", "make", "makefile", "toolchain", "program", "compile", "compiler"],
     "编译器": ["compiler", "toolchain", "armclang", "gcc_arm", "llvm", "cy_compiler_arm_dir", "cy_compiler_llvm_arm_dir"],
     "部署": ["deploy", "deployment", "集成", "generate code", "code generation", "mtb ml"],
+    "收费": ["licensing", "license", "fees", "price", "commercial deployment", "free", "compute minutes"],
+    "申请": ["test now", "download your model", "obtain", "request", "apply"],
+    "量产": ["production", "production-ready", "commercial deployment"],
     "排障": ["troubleshoot", "troubleshooting", "debug", "error", "failed", "failure", "问题"],
     "参数": ["parameter", "parameters", "config", "configuration", "macro", "define", "版本", "board", "bsp"],
     "示例": ["example", "examples", "demo", "sample", "readme"],
@@ -747,6 +752,36 @@ def intent_bonus(chunk: dict[str, Any], query_intent: dict[str, bool]) -> float:
         bonus -= 0.03
     return bonus
 
+def ready_model_bonus(chunk: dict[str, Any], query_variants: list[str]) -> float:
+    query_text = normalize_text(" ".join(query_variants)).lower()
+    if not any(
+        marker in query_text
+        for marker in (
+            "ready model",
+            "ready models",
+            "factory alarm",
+            "gesture recognition",
+            "siren detection",
+            "baby cry",
+            "cough detection",
+            "snore detection",
+            "fall detection",
+            "收费",
+            "申请",
+            "量产",
+            "commercial deployment",
+        )
+    ):
+        return 0.0
+    path_text = chunk.get("path", "").lower()
+    if "knowledge\\ready_models_catalog.md" in path_text:
+        return 0.35
+    if "ingest\\html\\deepcraft-ready-models" in path_text:
+        return 0.22
+    if "legal_licensing-metrics-and-fees" in path_text:
+        return 0.16
+    return 0.0
+
 def matched_query_terms(chunk: dict[str, Any], query_terms: list[str], limit: int = 12) -> list[str]:
     haystack = chunk_text_for_matching(chunk)
     hits = [term for term in dedupe_keep_order(query_terms) if len(term) >= 2 and term.lower() in haystack]
@@ -763,11 +798,13 @@ def rerank_results(
         coverage = query_coverage_score(item, query_terms)
         phrase = phrase_match_score(item, query_variants)
         intent = intent_bonus(item, query_intent)
-        rerank = item["score"] + (coverage * 0.28) + phrase + intent
+        ready_model = ready_model_bonus(item, query_variants)
+        rerank = item["score"] + (coverage * 0.28) + phrase + intent + ready_model
         enriched = dict(item)
         enriched["coverage_score"] = round(coverage, 6)
         enriched["phrase_score"] = round(phrase, 6)
         enriched["intent_score"] = round(intent, 6)
+        enriched["ready_model_score"] = round(ready_model, 6)
         enriched["rerank_score"] = round(rerank, 6)
         enriched["matched_query_terms"] = matched_query_terms(item, query_terms)
         reranked.append(enriched)

@@ -1,6 +1,6 @@
 # 专属助手训练审计日志
 
-**更新日期**: 2026-03-11  
+**更新日期**: 2026-03-25  
 **目标工作区**: `PSoC_Edge_DeepCraft_AI`  
 **审计基准**: `GENERIC_SPECIALIZED_QA_ASSISTANT_TEMPLATE.md`
 
@@ -196,3 +196,57 @@
   - `total_cases=4`
   - `ok_count=4`
   - `ok_rate=100%`
+
+## 7. 本轮新增审计目标：整理 README 摆放并接入 Ready Model 本地证据
+
+本轮新增目标聚焦两个问题：
+
+1. 清理根目录大量示例 `README_*.md` 与 `docs/readmes/` 并存造成的导航混乱。
+2. 将新加入的 `docs/ready_model_notes/` 8 份 Ready Model PDF，以及 `docs/机器震动异常检测模型训练指南.md` 接入知识主链与检索链。
+
+### 7.1 本轮完成的整理动作
+
+- 删除根目录已归档的示例 `README_*.md`，保留根目录门面 `README.md`
+- 统一知识文档中示例 README 的引用入口到 `docs/readmes/README_*.md`
+- 新增 `knowledge/ready_models_catalog.md`
+- 在 `knowledge/document_map.md`、`knowledge/overview.md`、`knowledge/retrieval_guide.md`、`knowledge/usage_guide.md`、`knowledge/examples_catalog.md` 中接入 Ready Model 主链
+- 在 `knowledge/deepcraft_web_backfill_20260310.md` 与 `knowledge/deepcraft_web_catalog.md` 中补充本地 Ready Model PDF 导航关系
+- 将 `docs/机器震动异常检测模型训练指南.md` 接入导航与示例链
+
+### 7.2 本轮检索链增强
+
+- 在 `scripts/rag_index_lib.py` 中为以下概念补充了查询同义词扩展：
+  - `ready model`
+  - `factory alarm detection`
+  - `收费`
+  - `申请`
+  - `量产`
+- 为 Ready Model 相关查询增加了轻量级路径 rerank：
+  - 优先提升 `knowledge/ready_models_catalog.md`
+  - 提升 `ingest/html/deepcraft-ready-models*.md`
+  - 提升 `ingest/html/legal_licensing-metrics-and-fees.md`
+
+### 7.3 当前验证结果
+
+- 执行 `python scripts\update_kb.py`：通过
+- 执行 `python scripts\verify_ingest.py`：通过
+- 执行 `python scripts\evaluate_retrieval.py --write-report`：通过
+- 执行 `python scripts\evaluate_grounded_answer.py --write-report`：通过
+- 当前索引摘要：
+  - `file_count=405`
+  - `chunk_count=5446`
+  - `symbol_count=14121`
+  - `token_count=33144`
+- 当前检索回归结果：
+  - `total_cases=8`
+  - `hit_count=8`
+  - `hit_rate=100%`
+- 当前 grounded answer 约束评测：
+  - `total_cases=4`
+  - `ok_count=4`
+  - `ok_rate=100%`
+
+### 7.4 本轮后仍保留的真实缺口
+
+- `docs/ready_model_notes/*.pdf` 目前仍未做页级正文抽取，检索主要通过 `knowledge/ready_models_catalog.md` 间接接入。
+- 对 `Factory Alarm Detection Ready Model 收费 / 申请 / 部署` 这类复合查询，当前排序已明显改善，但结果前列仍可能先出现网页测试页，再出现目录页；后续仍可继续做更细粒度的 query intent routing。

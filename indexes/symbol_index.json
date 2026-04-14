@@ -1526,6 +1526,195 @@
     "context": "## Document history"
   },
   {
+    "name": "机器震动异常检测模型训练指南",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 1,
+    "context": "# 机器震动异常检测模型训练指南"
+  },
+  {
+    "name": "一、核心概念",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 3,
+    "context": "## 一、核心概念"
+  },
+  {
+    "name": "1.1 训练 vs 推理",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 5,
+    "context": "### 1.1 训练 vs 推理"
+  },
+  {
+    "name": "二、数据分配",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 24,
+    "context": "## 二、数据分配"
+  },
+  {
+    "name": "2.1 官方推荐比例",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 26,
+    "context": "### 2.1 官方推荐比例"
+  },
+  {
+    "name": "2.2 分配操作",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 32,
+    "context": "### 2.2 分配操作"
+  },
+  {
+    "name": "2.3 机器震动场景建议",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 39,
+    "context": "### 2.3 机器震动场景建议"
+  },
+  {
+    "name": "三、模型生成与训练配置",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 51,
+    "context": "## 三、模型生成与训练配置"
+  },
+  {
+    "name": "3.1 操作步骤",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 53,
+    "context": "### 3.1 操作步骤"
+  },
+  {
+    "name": "3.2 Auto ML参数推荐（机器震动场景，后续效果不好再调）",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 60,
+    "context": "### 3.2 Auto ML参数推荐（机器震动场景，后续效果不好再调）"
+  },
+  {
+    "name": "3.3 训练参数配置（依据训练过程输出，再调）",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 73,
+    "context": "### 3.3 训练参数配置（依据训练过程输出，再调）"
+  },
+  {
+    "name": "四、训练选项详解",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 84,
+    "context": "## 四、训练选项详解"
+  },
+  {
+    "name": "4.1 Use GPU",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 86,
+    "context": "### 4.1 Use GPU"
+  },
+  {
+    "name": "4.2 Generate Labels",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 92,
+    "context": "### 4.2 Generate Labels"
+  },
+  {
+    "name": "4.3 Generate Gradcam",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 98,
+    "context": "### 4.3 Generate Gradcam"
+  },
+  {
+    "name": "4.4 推荐配置总结",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 104,
+    "context": "### 4.4 推荐配置总结"
+  },
+  {
+    "name": "五、训练过程监控",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 114,
+    "context": "## 五、训练过程监控"
+  },
+  {
+    "name": "5.1 关注的曲线",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 116,
+    "context": "### 5.1 关注的曲线"
+  },
+  {
+    "name": "5.2 过拟合信号",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 121,
+    "context": "### 5.2 过拟合信号"
+  },
+  {
+    "name": "5.3 参数调整建议",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 127,
+    "context": "### 5.3 参数调整建议"
+  },
+  {
+    "name": "六、模型评估",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 138,
+    "context": "## 六、模型评估"
+  },
+  {
+    "name": "6.1 混淆矩阵解读（二分类）",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 140,
+    "context": "### 6.1 混淆矩阵解读（二分类）"
+  },
+  {
+    "name": "6.2 评估指标",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 154,
+    "context": "### 6.2 评估指标"
+  },
+  {
+    "name": "6.3 机器震动场景特别关注",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 163,
+    "context": "### 6.3 机器震动场景特别关注"
+  },
+  {
+    "name": "6.4 评估操作步骤",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 179,
+    "context": "### 6.4 评估操作步骤"
+  },
+  {
+    "name": "七、完整流程总结",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 191,
+    "context": "## 七、完整流程总结"
+  },
+  {
+    "name": "八、官方文档链接",
+    "type": "heading",
+    "path": "docs\\机器震动异常检测模型训练指南.md",
+    "line": 205,
+    "context": "## 八、官方文档链接"
+  },
+  {
     "name": "专属问答 AI 助手通用训练模板",
     "type": "heading",
     "path": "GENERIC_SPECIALIZED_QA_ASSISTANT_TEMPLATE.md",
@@ -2744,6 +2933,41 @@
     "context": "### 6.4 本轮验证结果"
   },
   {
+    "name": "7. 本轮新增审计目标：整理 README 摆放并接入 Ready Model 本地证据",
+    "type": "heading",
+    "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
+    "line": 200,
+    "context": "## 7. 本轮新增审计目标：整理 README 摆放并接入 Ready Model 本地证据"
+  },
+  {
+    "name": "7.1 本轮完成的整理动作",
+    "type": "heading",
+    "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
+    "line": 207,
+    "context": "### 7.1 本轮完成的整理动作"
+  },
+  {
+    "name": "7.2 本轮检索链增强",
+    "type": "heading",
+    "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
+    "line": 216,
+    "context": "### 7.2 本轮检索链增强"
+  },
+  {
+    "name": "7.3 当前验证结果",
+    "type": "heading",
+    "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
+    "line": 229,
+    "context": "### 7.3 当前验证结果"
+  },
+  {
+    "name": "7.4 本轮后仍保留的真实缺口",
+    "type": "heading",
+    "path": "governance\\ASSISTANT_TRAINING_AUDIT_LOG.md",
+    "line": 249,
+    "context": "### 7.4 本轮后仍保留的真实缺口"
+  },
+  {
     "name": "当前状态",
     "type": "heading",
     "path": "governance\\CURRENT_STATUS.md",
@@ -2761,28 +2985,28 @@
     "name": "本轮已完成的关键事项",
     "type": "heading",
     "path": "governance\\CURRENT_STATUS.md",
-    "line": 31,
+    "line": 33,
     "context": "## 本轮已完成的关键事项"
   },
   {
     "name": "本轮抓取状态",
     "type": "heading",
     "path": "governance\\CURRENT_STATUS.md",
-    "line": 45,
+    "line": 49,
     "context": "## 本轮抓取状态"
   },
   {
     "name": "当前仍保留的真实缺口",
     "type": "heading",
     "path": "governance\\CURRENT_STATUS.md",
-    "line": 56,
+    "line": 60,
     "context": "## 当前仍保留的真实缺口"
   },
   {
     "name": "本轮验证",
     "type": "heading",
     "path": "governance\\CURRENT_STATUS.md",
-    "line": 65,
+    "line": 70,
     "context": "## 本轮验证"
   },
   {
@@ -9383,21 +9607,21 @@
     "name": "2.8 Legal / 合规",
     "type": "heading",
     "path": "knowledge\\deepcraft_web_backfill_20260310.md",
-    "line": 86,
+    "line": 87,
     "context": "### 2.8 Legal / 合规"
   },
   {
     "name": "3. 本轮失败项",
     "type": "heading",
     "path": "knowledge\\deepcraft_web_backfill_20260310.md",
-    "line": 94,
+    "line": 95,
     "context": "## 3. 本轮失败项"
   },
   {
     "name": "4. 这份回填文档怎么用",
     "type": "heading",
     "path": "knowledge\\deepcraft_web_backfill_20260310.md",
-    "line": 107,
+    "line": 108,
     "context": "## 4. 这份回填文档怎么用"
   },
   {
@@ -9439,14 +9663,14 @@
     "name": "5. 本轮抓取结果与边界",
     "type": "heading",
     "path": "knowledge\\deepcraft_web_catalog.md",
-    "line": 53,
+    "line": 54,
     "context": "## 5. 本轮抓取结果与边界"
   },
   {
     "name": "6. 使用时要注意什么",
     "type": "heading",
     "path": "knowledge\\deepcraft_web_catalog.md",
-    "line": 63,
+    "line": 64,
     "context": "## 6. 使用时要注意什么"
   },
   {
@@ -9467,21 +9691,21 @@
     "name": "2. 核心知识入口",
     "type": "heading",
     "path": "knowledge\\document_map.md",
-    "line": 23,
+    "line": 25,
     "context": "## 2. 核心知识入口"
   },
   {
     "name": "3. 检索与工具入口",
     "type": "heading",
     "path": "knowledge\\document_map.md",
-    "line": 39,
+    "line": 42,
     "context": "## 3. 检索与工具入口"
   },
   {
     "name": "4. 治理与状态入口",
     "type": "heading",
     "path": "knowledge\\document_map.md",
-    "line": 55,
+    "line": 58,
     "context": "## 4. 治理与状态入口"
   },
   {
@@ -9495,147 +9719,147 @@
     "name": "1. 机器学习",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 7,
+    "line": 9,
     "context": "## 1. 机器学习"
   },
   {
     "name": "1.1 MTBML Deploy - Imagimob 模型部署",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 9,
+    "line": 11,
     "context": "### 1.1 MTBML Deploy - Imagimob 模型部署"
   },
   {
     "name": "1.2 Face ID Demo - 人脸识别",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 22,
+    "line": 24,
     "context": "### 1.2 Face ID Demo - 人脸识别"
   },
   {
     "name": "2. DEEPCRAFT 集成示例",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 36,
+    "line": 38,
     "context": "## 2. DEEPCRAFT 集成示例"
   },
   {
     "name": "2.1 数据采集",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 38,
+    "line": 40,
     "context": "### 2.1 数据采集"
   },
   {
     "name": "2.2 运动模型部署",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 43,
+    "line": 45,
     "context": "### 2.2 运动模型部署"
   },
   {
     "name": "2.3 视觉模型部署",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 48,
+    "line": 50,
     "context": "### 2.3 视觉模型部署"
   },
   {
     "name": "3. 音频相关",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 55,
+    "line": 57,
     "context": "## 3. 音频相关"
   },
   {
     "name": "3.1 音频增强",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 57,
+    "line": 59,
     "context": "### 3.1 音频增强"
   },
   {
     "name": "3.2 设备音频录制",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 62,
+    "line": 64,
     "context": "### 3.2 设备音频录制"
   },
   {
     "name": "3.3 语音助手",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 67,
+    "line": 69,
     "context": "### 3.3 语音助手"
   },
   {
     "name": "3.4 异常振动检测",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 72,
+    "line": 74,
     "context": "### 3.4 异常振动检测"
   },
   {
     "name": "4. 图形界面",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 79,
+    "line": 83,
     "context": "## 4. 图形界面"
   },
   {
     "name": "4.1 LVGL Smartwatch Demo",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 81,
+    "line": 85,
     "context": "### 4.1 LVGL Smartwatch Demo"
   },
   {
     "name": "4.2 VGLite API",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 86,
+    "line": 90,
     "context": "### 4.2 VGLite API"
   },
   {
     "name": "4.3 显示驱动",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 91,
+    "line": 95,
     "context": "### 4.3 显示驱动"
   },
   {
     "name": "5. 系统功能",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 98,
+    "line": 102,
     "context": "## 5. 系统功能"
   },
   {
     "name": "5.1 空应用模板",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 100,
+    "line": 104,
     "context": "### 5.1 空应用模板"
   },
   {
     "name": "5.2 UART DMA",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 105,
+    "line": 109,
     "context": "### 5.2 UART DMA"
   },
   {
     "name": "5.3 文件系统",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 110,
+    "line": 114,
     "context": "### 5.3 文件系统"
   },
   {
     "name": "6. 快速参考表",
     "type": "heading",
     "path": "knowledge\\examples_catalog.md",
-    "line": 117,
+    "line": 121,
     "context": "## 6. 快速参考表"
   },
   {
@@ -10825,42 +11049,42 @@
     "name": "2.8 部署与调试",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 169,
+    "line": 171,
     "context": "### 2.8 部署与调试"
   },
   {
     "name": "3. 常见问题",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 184,
+    "line": 186,
     "context": "## 3. 常见问题"
   },
   {
     "name": "Q: Tensor arena 大小如何确定？",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 186,
+    "line": 188,
     "context": "### Q: Tensor arena 大小如何确定？"
   },
   {
     "name": "Q: int8 量化后精度下降明显怎么办？",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 189,
+    "line": 191,
     "context": "### Q: int8 量化后精度下降明显怎么办？"
   },
   {
     "name": "Q: 如何启用 NPU 加速？",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 192,
+    "line": 194,
     "context": "### Q: 如何启用 NPU 加速？"
   },
   {
     "name": "4. 性能优化检查清单",
     "type": "heading",
     "path": "knowledge\\ml_workflow.md",
-    "line": 200,
+    "line": 202,
     "context": "## 4. 性能优化检查清单"
   },
   {
@@ -11049,14 +11273,14 @@
     "name": "5. 当前网页知识状态",
     "type": "heading",
     "path": "knowledge\\overview.md",
-    "line": 50,
+    "line": 51,
     "context": "## 5. 当前网页知识状态"
   },
   {
     "name": "6. 治理与维护入口",
     "type": "heading",
     "path": "knowledge\\overview.md",
-    "line": 59,
+    "line": 61,
     "context": "## 6. 治理与维护入口"
   },
   {
@@ -11095,6 +11319,69 @@
     "context": "## 4. 快速验证入口"
   },
   {
+    "name": "DEEPCRAFT Ready Model 资料目录",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 1,
+    "context": "# DEEPCRAFT Ready Model 资料目录"
+  },
+  {
+    "name": "1. 当前 Ready Model 证据链由哪些部分组成",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 18,
+    "context": "## 1. 当前 Ready Model 证据链由哪些部分组成"
+  },
+  {
+    "name": "2. 当前本地已归档的 8 份 Ready Model 报告",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 28,
+    "context": "## 2. 当前本地已归档的 8 份 Ready Model 报告"
+  },
+  {
+    "name": "3. 与网页镜像的对应关系",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 41,
+    "context": "## 3. 与网页镜像的对应关系"
+  },
+  {
+    "name": "4. 板卡与部署入口怎么对应",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 49,
+    "context": "## 4. 板卡与部署入口怎么对应"
+  },
+  {
+    "name": "4.1 PSoC 6 / CY8CKIT-062S2-AI",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 51,
+    "context": "### 4.1 PSoC 6 / CY8CKIT-062S2-AI"
+  },
+  {
+    "name": "4.2 PSoC Edge E84",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 56,
+    "context": "### 4.2 PSoC Edge E84"
+  },
+  {
+    "name": "5. 当前检索与引用边界",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 62,
+    "context": "## 5. 当前检索与引用边界"
+  },
+  {
+    "name": "6. 推荐使用顺序",
+    "type": "heading",
+    "path": "knowledge\\ready_models_catalog.md",
+    "line": 68,
+    "context": "## 6. 推荐使用顺序"
+  },
+  {
     "name": "检索与 RAG 使用指南",
     "type": "heading",
     "path": "knowledge\\retrieval_guide.md",
@@ -11112,28 +11399,28 @@
     "name": "2. 当前网页检索推荐路径",
     "type": "heading",
     "path": "knowledge\\retrieval_guide.md",
-    "line": 28,
+    "line": 30,
     "context": "## 2. 当前网页检索推荐路径"
   },
   {
     "name": "3. 什么时候用什么",
     "type": "heading",
     "path": "knowledge\\retrieval_guide.md",
-    "line": 36,
+    "line": 38,
     "context": "## 3. 什么时候用什么"
   },
   {
     "name": "4. 当前实现特点",
     "type": "heading",
     "path": "knowledge\\retrieval_guide.md",
-    "line": 51,
+    "line": 54,
     "context": "## 4. 当前实现特点"
   },
   {
     "name": "5. 维护时的注意事项",
     "type": "heading",
     "path": "knowledge\\retrieval_guide.md",
-    "line": 63,
+    "line": 67,
     "context": "## 5. 维护时的注意事项"
   },
   {
@@ -11823,395 +12110,409 @@
     "context": "# - Kit Guide → docs/kit_guides/"
   },
   {
+    "name": "- Ready Model Test Report → docs/ready_model_notes/",
+    "type": "heading",
+    "path": "knowledge\\update_workflow.md",
+    "line": 39,
+    "context": "# - Ready Model Test Report → docs/ready_model_notes/"
+  },
+  {
     "name": "步骤 2：重命名文件（规范化）",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 40,
+    "line": 41,
     "context": "# 步骤 2：重命名文件（规范化）"
   },
   {
     "name": "在资源管理器或 PowerShell 中移动到 docs\\\\<category>\\\\normalized_name.pdf",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 41,
+    "line": 42,
     "context": "# 在资源管理器或 PowerShell 中移动到 docs\\\\<category>\\\\normalized_name.pdf"
   },
   {
     "name": "步骤 3：创建索引文件",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 43,
+    "line": 44,
     "context": "# 步骤 3：创建索引文件"
   },
   {
-    "name": "knowledge/index_<document>.md",
+    "name": "- 通用 PDF：knowledge/index_<document>.md",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 44,
-    "context": "# knowledge/index_<document>.md"
+    "line": 45,
+    "context": "# - 通用 PDF：knowledge/index_<document>.md"
+  },
+  {
+    "name": "- Ready Model 报告：更新 knowledge/ready_models_catalog.md",
+    "type": "heading",
+    "path": "knowledge\\update_workflow.md",
+    "line": 46,
+    "context": "# - Ready Model 报告：更新 knowledge/ready_models_catalog.md"
   },
   {
     "name": "步骤 4：更新 document_map.md",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 46,
+    "line": 48,
     "context": "# 步骤 4：更新 document_map.md"
   },
   {
-    "name": "添加新文档条目",
+    "name": "添加新文档条目；若为 Ready Model，同时更新 overview / retrieval_guide",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 47,
-    "context": "# 添加新文档条目"
+    "line": 49,
+    "context": "# 添加新文档条目；若为 Ready Model，同时更新 overview / retrieval_guide"
   },
   {
     "name": "步骤 5：更新 workspace_inventory.md",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 49,
+    "line": 51,
     "context": "# 步骤 5：更新 workspace_inventory.md"
   },
   {
     "name": "添加到文件清单",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 50,
+    "line": 52,
     "context": "# 添加到文件清单"
   },
   {
     "name": "1.3 新增示例代码",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 53,
+    "line": 55,
     "context": "### 1.3 新增示例代码"
   },
   {
     "name": "步骤 1：复制 README 到归档目录",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 57,
+    "line": 59,
     "context": "# 步骤 1：复制 README 到归档目录"
   },
   {
     "name": "步骤 2：添加 YAML 头",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 60,
+    "line": 62,
     "context": "# 步骤 2：添加 YAML 头"
   },
   {
     "name": "参考现有 README 格式",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 61,
+    "line": 63,
     "context": "# 参考现有 README 格式"
   },
   {
     "name": "步骤 3：更新 examples_catalog.md",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 63,
+    "line": 65,
     "context": "# 步骤 3：更新 examples_catalog.md"
   },
   {
     "name": "添加新示例条目",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 64,
+    "line": 66,
     "context": "# 添加新示例条目"
   },
   {
     "name": "步骤 4：检查关联文档",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 66,
+    "line": 68,
     "context": "# 步骤 4：检查关联文档"
   },
   {
     "name": "确保相关知识点已覆盖",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 67,
+    "line": 69,
     "context": "# 确保相关知识点已覆盖"
   },
   {
     "name": "2. 周度维护任务",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 72,
+    "line": 74,
     "context": "## 2. 周度维护任务"
   },
   {
     "name": "2.1 链接有效性检查",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 74,
+    "line": 76,
     "context": "### 2.1 链接有效性检查"
   },
   {
     "name": "检查失败链接",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 76,
+    "line": 78,
     "context": "# 检查失败链接"
   },
   {
     "name": "查看失败清单",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 86,
+    "line": 88,
     "context": "# 查看失败清单"
   },
   {
     "name": "2.2 文档一致性检查",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 90,
+    "line": 92,
     "context": "### 2.2 文档一致性检查"
   },
   {
     "name": "3. 月度审计任务",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 97,
+    "line": 100,
     "context": "## 3. 月度审计任务"
   },
   {
     "name": "3.1 完整性审计",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 99,
+    "line": 102,
     "context": "### 3.1 完整性审计"
   },
   {
     "name": "3.2 内容更新",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 102,
+    "line": 105,
     "context": "### 3.2 内容更新"
   },
   {
     "name": "3.3 生成审计报告",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 115,
+    "line": 118,
     "context": "### 3.3 生成审计报告"
   },
   {
     "name": "运行自动审计",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 117,
+    "line": 120,
     "context": "# 运行自动审计"
   },
   {
     "name": "当前工作区尚未提供正式 audit_report 脚本；建议将审计结果整理后再写回知识库",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 119,
+    "line": 122,
     "context": "# 当前工作区尚未提供正式 audit_report 脚本；建议将审计结果整理后再写回知识库"
   },
   {
     "name": "4. 季度深度审计",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 124,
+    "line": 127,
     "context": "## 4. 季度深度审计"
   },
   {
     "name": "4.1 内容覆盖度评估",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 126,
+    "line": 129,
     "context": "### 4.1 内容覆盖度评估"
   },
   {
     "name": "4.2 代码示例验证",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 131,
+    "line": 134,
     "context": "### 4.2 代码示例验证"
   },
   {
     "name": "4.3 用户体验评估",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 136,
+    "line": 139,
     "context": "### 4.3 用户体验评估"
   },
   {
     "name": "5. 版本发布流程",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 143,
+    "line": 146,
     "context": "## 5. 版本发布流程"
   },
   {
     "name": "5.1 发布前检查",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 145,
+    "line": 148,
     "context": "### 5.1 发布前检查"
   },
   {
     "name": "1. 完整性检查",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 147,
+    "line": 150,
     "context": "# 1. 完整性检查"
   },
   {
     "name": "2. 验证 README YAML",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 150,
+    "line": 153,
     "context": "# 2. 验证 README YAML"
   },
   {
     "name": "3. 验证 HTML 抓取",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 155,
+    "line": 158,
     "context": "# 3. 验证 HTML 抓取"
   },
   {
     "name": "5.2 版本标记",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 159,
+    "line": 162,
     "context": "### 5.2 版本标记"
   },
   {
     "name": "创建版本标签",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 161,
+    "line": 164,
     "context": "# 创建版本标签"
   },
   {
     "name": "生成变更日志",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 164,
+    "line": 167,
     "context": "# 生成变更日志"
   },
   {
     "name": "6. 问题修复流程",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 170,
+    "line": 173,
     "context": "## 6. 问题修复流程"
   },
   {
     "name": "6.1 发现问题",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 172,
+    "line": 175,
     "context": "### 6.1 发现问题"
   },
   {
     "name": "6.2 修复问题",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 177,
+    "line": 180,
     "context": "### 6.2 修复问题"
   },
   {
     "name": "6.3 关闭问题",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 183,
+    "line": 186,
     "context": "### 6.3 关闭问题"
   },
   {
     "name": "7. 备份与恢复",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 190,
+    "line": 193,
     "context": "## 7. 备份与恢复"
   },
   {
     "name": "7.1 备份策略",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 192,
+    "line": 195,
     "context": "### 7.1 备份策略"
   },
   {
     "name": "每周备份",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 194,
+    "line": 197,
     "context": "# 每周备份"
   },
   {
     "name": "存储到远程",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 198,
+    "line": 201,
     "context": "# 存储到远程"
   },
   {
     "name": "scp backup_*.tar.gz user@remote:/backup/path/",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 199,
+    "line": 202,
     "context": "# scp backup_*.tar.gz user@remote:/backup/path/"
   },
   {
     "name": "7.2 恢复流程",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 202,
+    "line": 205,
     "context": "### 7.2 恢复流程"
   },
   {
     "name": "恢复到特定日期",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 204,
+    "line": 207,
     "context": "# 恢复到特定日期"
   },
   {
     "name": "验证恢复",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 207,
+    "line": 210,
     "context": "# 验证恢复"
   },
   {
     "name": "8. 自动化建议",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 213,
+    "line": 216,
     "context": "## 8. 自动化建议"
   },
   {
     "name": "8.1 CI/CD 集成",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 215,
+    "line": 218,
     "context": "### 8.1 CI/CD 集成"
   },
   {
     "name": ".github/workflows/audit.yml",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 217,
+    "line": 220,
     "context": "# .github/workflows/audit.yml"
   },
   {
     "name": "8.2 自动抓取",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 236,
+    "line": 239,
     "context": "### 8.2 自动抓取"
   },
   {
     "name": "crontab 配置",
     "type": "heading",
     "path": "knowledge\\update_workflow.md",
-    "line": 238,
+    "line": 241,
     "context": "# crontab 配置"
   },
   {
@@ -12337,28 +12638,28 @@
     "name": "7. 如果你是高级使用者",
     "type": "heading",
     "path": "knowledge\\usage_guide.md",
-    "line": 142,
+    "line": 143,
     "context": "## 7. 如果你是高级使用者"
   },
   {
     "name": "7.1 你可以直接用检索 CLI",
     "type": "heading",
     "path": "knowledge\\usage_guide.md",
-    "line": 144,
+    "line": 145,
     "context": "### 7.1 你可以直接用检索 CLI"
   },
   {
     "name": "7.2 什么时候优先用 grounded answer",
     "type": "heading",
     "path": "knowledge\\usage_guide.md",
-    "line": 152,
+    "line": 153,
     "context": "### 7.2 什么时候优先用 grounded answer"
   },
   {
     "name": "8. 语言约定",
     "type": "heading",
     "path": "knowledge\\usage_guide.md",
-    "line": 161,
+    "line": 162,
     "context": "## 8. 语言约定"
   },
   {
@@ -97856,1212 +98157,36 @@
     "name": "3.2 本地 RAG",
     "type": "heading",
     "path": "README.md",
-    "line": 66,
+    "line": 67,
     "context": "### 3.2 本地 RAG"
   },
   {
     "name": "3.3 网页知识链",
     "type": "heading",
     "path": "README.md",
-    "line": 75,
+    "line": 76,
     "context": "### 3.3 网页知识链"
   },
   {
     "name": "4. 推荐先读哪里",
     "type": "heading",
     "path": "README.md",
-    "line": 83,
+    "line": 84,
     "context": "## 4. 推荐先读哪里"
   },
   {
     "name": "5. 如果你是维护者",
     "type": "heading",
     "path": "README.md",
-    "line": 91,
+    "line": 93,
     "context": "## 5. 如果你是维护者"
   },
   {
     "name": "6. 结论",
     "type": "heading",
     "path": "README.md",
-    "line": 102,
-    "context": "## 6. 结论"
-  },
-  {
-    "name": "Use-case description",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 5,
-    "context": "## Use-case description"
-  },
-  {
-    "name": "How can I know if this project fits my use case?",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 12,
-    "context": "### How can I know if this project fits my use case?"
-  },
-  {
-    "name": "How can this project ease my go-to-production journey?",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 21,
-    "context": "### How can this project ease my go-to-production journey?"
-  },
-  {
-    "name": "Contents",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 30,
-    "context": "## Contents"
-  },
-  {
-    "name": "Sensor settings specification",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 42,
-    "context": "## Sensor settings specification"
-  },
-  {
-    "name": "Collecting and expanding the dataset",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 56,
-    "context": "## Collecting and expanding the dataset"
-  },
-  {
-    "name": "A note on data labeling",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 77,
-    "context": "### A note on data labeling"
-  },
-  {
-    "name": "Using the script for fast labeling of data",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 87,
-    "context": "### Using the script for fast labeling of data"
-  },
-  {
-    "name": "Recommended path to production",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 103,
-    "context": "## Recommended path to production"
-  },
-  {
-    "name": "Getting Started",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 145,
-    "context": "## Getting Started"
-  },
-  {
-    "name": "Help & Support",
-    "type": "heading",
-    "path": "README_AnomalousVibrationDetection.md",
-    "line": 149,
-    "context": "## Help & Support"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: DEEPCRAFT&trade; Audio Enhancement Application",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: DEEPCRAFT&trade; Audio Enhancement Application"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 24,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 32,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 38,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 44,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 53,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation in default mode",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 78,
-    "context": "## Operation in default mode"
-  },
-  {
-    "name": "Design guide",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 133,
-    "context": "## Design guide"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 138,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 152,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Audio_Enhancement.md",
-    "line": 157,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Machine Learning – DEEPCRAFT&trade; data collection",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Machine Learning – DEEPCRAFT&trade; data collection"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 24,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 32,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 40,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 47,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "USB connection to DEEPCRAFT&trade; Studio for data transfer",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 58,
-    "context": "### USB connection to DEEPCRAFT&trade; Studio for data transfer"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 71,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 79,
-    "context": "## Operation"
-  },
-  {
-    "name": "Data collection with DEEPCRAFT&trade; Studio",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 102,
-    "context": "### Data collection with DEEPCRAFT&trade; Studio"
-  },
-  {
-    "name": "Status LED codes",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 123,
-    "context": "## Status LED codes"
-  },
-  {
-    "name": "Normal operation",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 126,
-    "context": "### Normal operation"
-  },
-  {
-    "name": "Error indication",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 131,
-    "context": "### Error indication"
-  },
-  {
-    "name": "Error code patterns",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 140,
-    "context": "### Error code patterns"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 164,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 178,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Data_Collection.md",
-    "line": 183,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Machine learning – DEEPCRAFT&trade; deploy motion",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Machine learning – DEEPCRAFT&trade; deploy motion"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 18,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 26,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 37,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 44,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 54,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 63,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 110,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 124,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Motion.md",
-    "line": 129,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Machine learning – DEEPCRAFT&trade; deploy vision",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Machine learning – DEEPCRAFT&trade; deploy vision"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 32,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 38,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Supported camera and display",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 50,
-    "context": "### Supported camera and display"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 82,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 93,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 127,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 141,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_DEEPCRAFT_Deploy_Vision.md",
-    "line": 146,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Audio recorder using emUSB-device",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Audio recorder using emUSB-device"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 30,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 37,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 47,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 56,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 119,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 133,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Device_Audio_Recorder.md",
-    "line": 138,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: emUSB-device FatFs MSC file system",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: emUSB-device FatFs MSC file system"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 30,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 36,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 45,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 54,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 101,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 115,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_device_File_system_FreeRTOS.md",
-    "line": 120,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Empty application",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Empty application"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 30,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 37,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 48,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 57,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 70,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 84,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Empty_Application.md",
-    "line": 89,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Graphics using VGLite API",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Graphics using VGLite API"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 30,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 36,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Supported display and electrical connection with KIT_PSE84_EVAL",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 44,
-    "context": "### Supported display and electrical connection with KIT_PSE84_EVAL"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 57,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 66,
-    "context": "## Operation"
-  },
-  {
-    "name": "Performance KPIs of demonstrated operations",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 143,
-    "context": "## Performance KPIs of demonstrated operations"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 155,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 169,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Graphics_using_VGLite_API.md",
-    "line": 174,
-    "context": "## Document history"
-  },
-  {
-    "name": "Waveshare 4.3 inch DSI display driver library for ModusToolbox&trade;",
-    "type": "heading",
-    "path": "README_LVGL_Smartwatch_Demo.md",
-    "line": 1,
-    "context": "# Waveshare 4.3 inch DSI display driver library for ModusToolbox&trade;"
-  },
-  {
-    "name": "Overview",
-    "type": "heading",
-    "path": "README_LVGL_Smartwatch_Demo.md",
-    "line": 3,
-    "context": "## Overview"
-  },
-  {
-    "name": "Quick start",
-    "type": "heading",
-    "path": "README_LVGL_Smartwatch_Demo.md",
-    "line": 7,
-    "context": "## Quick start"
-  },
-  {
-    "name": "More information",
-    "type": "heading",
-    "path": "README_LVGL_Smartwatch_Demo.md",
-    "line": 254,
-    "context": "## More information"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Machine learning - face ID demo",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Machine learning - face ID demo"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 22,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 29,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 35,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 41,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Supported display and electrical connection with KIT_PSE84_EVAL and KIT_PSE84_AI",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 51,
-    "context": "### Supported display and electrical connection with KIT_PSE84_EVAL and KIT_PSE84_AI"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 78,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Application Specific Configurations",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 86,
-    "context": "## Application Specific Configurations"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
     "line": 104,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 185,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 198,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Machine_Learning_Face_ID_Demo.md",
-    "line": 202,
-    "context": "## Document history"
-  },
-  {
-    "name": "Machine learning: Imagimob MTBML deployment",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 1,
-    "context": "# Machine learning: Imagimob MTBML deployment"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 15,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 25,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 33,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 43,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 51,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Using the code example",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 75,
-    "context": "## Using the code example"
-  },
-  {
-    "name": "Create the project",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 77,
-    "context": "### Create the project"
-  },
-  {
-    "name": "Open the project",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 135,
-    "context": "### Open the project"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 178,
-    "context": "## Operation"
-  },
-  {
-    "name": "Debugging",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 272,
-    "context": "## Debugging"
-  },
-  {
-    "name": "Design and implementation",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 294,
-    "context": "## Design and implementation"
-  },
-  {
-    "name": "Human Activity detection",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 298,
-    "context": "### Human Activity detection"
-  },
-  {
-    "name": "Baby Cry detection",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 312,
-    "context": "### Baby Cry detection"
-  },
-  {
-    "name": "Model generation",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 328,
-    "context": "### Model generation"
-  },
-  {
-    "name": "Files and folders",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 346,
-    "context": "### Files and folders"
-  },
-  {
-    "name": "Resources and settings",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 364,
-    "context": "### Resources and settings"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 380,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 395,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-    "line": 402,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: UART transmit and receive using DMA",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: UART transmit and receive using DMA"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 14,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 22,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 30,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 37,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 48,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 57,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 74,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 88,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_UART_transmit_and_receive_with_DMA.md",
-    "line": 93,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: DEEPCRAFT&trade; Voice Assistant deployment",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: DEEPCRAFT&trade; Voice Assistant deployment"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 18,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 26,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 32,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 39,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 49,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 69,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 89,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 103,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Voice_Assistant_Deployment.md",
-    "line": 108,
-    "context": "## Document history"
-  },
-  {
-    "name": "PSOC&trade; Edge MCU: Smartwatch demo using LVGL",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 1,
-    "context": "# PSOC&trade; Edge MCU: Smartwatch demo using LVGL"
-  },
-  {
-    "name": "Requirements",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 53,
-    "context": "## Requirements"
-  },
-  {
-    "name": "Supported toolchains (make variable 'TOOLCHAIN')",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 61,
-    "context": "## Supported toolchains (make variable 'TOOLCHAIN')"
-  },
-  {
-    "name": "Supported kits (make variable 'TARGET')",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 69,
-    "context": "## Supported kits (make variable 'TARGET')"
-  },
-  {
-    "name": "Hardware setup",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 75,
-    "context": "## Hardware setup"
-  },
-  {
-    "name": "Supported display and electrical connection with KIT_PSE84_EVAL",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 83,
-    "context": "### Supported display and electrical connection with KIT_PSE84_EVAL"
-  },
-  {
-    "name": "Software setup",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 130,
-    "context": "## Software setup"
-  },
-  {
-    "name": "Operation",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 138,
-    "context": "## Operation"
-  },
-  {
-    "name": "Related resources",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 215,
-    "context": "## Related resources"
-  },
-  {
-    "name": "Other resources",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 229,
-    "context": "## Other resources"
-  },
-  {
-    "name": "Document history",
-    "type": "heading",
-    "path": "README_Waveshare_Display_Driver.md",
-    "line": 234,
-    "context": "## Document history"
+    "context": "## 6. 结论"
   },
   {
     "name": "main",
@@ -99158,371 +98283,378 @@
     "name": "ensure_dirs",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 156,
+    "line": 161,
     "context": "def ensure_dirs() -> None:"
   },
   {
     "name": "rel_path",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 160,
+    "line": 165,
     "context": "def rel_path(path: Path) -> str:"
   },
   {
     "name": "stable_hash",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 163,
+    "line": 168,
     "context": "def stable_hash(text: str) -> str:"
   },
   {
     "name": "normalize_text",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 166,
+    "line": 171,
     "context": "def normalize_text(text: str) -> str:"
   },
   {
     "name": "file_sha1",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 171,
+    "line": 176,
     "context": "def file_sha1(path: Path) -> str:"
   },
   {
     "name": "classify_source",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 174,
+    "line": 179,
     "context": "def classify_source(rel: str) -> str:"
   },
   {
     "name": "should_include_file",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 204,
+    "line": 209,
     "context": "def should_include_file(path: Path) -> bool:"
   },
   {
     "name": "gather_files",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 218,
+    "line": 223,
     "context": "def gather_files() -> list[Path]:"
   },
   {
     "name": "safe_read_text",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 225,
+    "line": 230,
     "context": "def safe_read_text(path: Path) -> str:"
   },
   {
     "name": "first_heading_or_stem",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 233,
+    "line": 238,
     "context": "def first_heading_or_stem(path: Path, text: str) -> str:"
   },
   {
     "name": "tokenize",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 240,
+    "line": 245,
     "context": "def tokenize(text: str) -> list[str]:"
   },
   {
     "name": "expand_query_terms",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 261,
+    "line": 266,
     "context": "def expand_query_terms(query: str) -> list[str]:"
   },
   {
     "name": "top_keywords",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 270,
+    "line": 275,
     "context": "def top_keywords(text: str, limit: int = 32) -> list[str]:"
   },
   {
     "name": "rule_tag_hits",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 281,
+    "line": 286,
     "context": "def rule_tag_hits(haystack: str, rules: dict[str, list[str]]) -> list[str]:"
   },
   {
     "name": "infer_metadata",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 288,
+    "line": 293,
     "context": "def infer_metadata(rel: str, text: str, source_type: str) -> dict[str, Any]:"
   },
   {
     "name": "infer_query_metadata",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 298,
+    "line": 303,
     "context": "def infer_query_metadata(query: str) -> dict[str, list[str]]:"
   },
   {
     "name": "dedupe_keep_order",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 306,
+    "line": 311,
     "context": "def dedupe_keep_order(items: list[str]) -> list[str]:"
   },
   {
     "name": "rewrite_query_variants",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 309,
+    "line": 314,
     "context": "def rewrite_query_variants(query: str) -> list[str]:"
   },
   {
     "name": "collect_query_terms",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 330,
+    "line": 335,
     "context": "def collect_query_terms(query_variants: list[str]) -> list[str]:"
   },
   {
     "name": "infer_query_intent",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 336,
+    "line": 341,
     "context": "def infer_query_intent(query: str) -> dict[str, bool]:"
   },
   {
     "name": "choose_chunk_end",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 345,
+    "line": 350,
     "context": "def choose_chunk_end(lines: list[str], start: int, max_lines: int, min_lines: int = 12, lookback: int = 8) -> int:"
   },
   {
     "name": "dense_vector",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 358,
+    "line": 363,
     "context": "def dense_vector(text: str, dimensions: int = 384) -> list[float]:"
   },
   {
     "name": "cosine_similarity",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 368,
+    "line": 373,
     "context": "def cosine_similarity(vec_a: list[float], vec_b: list[float]) -> float:"
   },
   {
     "name": "markdown_sections",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 372,
+    "line": 377,
     "context": "def markdown_sections(lines: list[str]) -> list[tuple[int, int, list[str]]]:"
   },
   {
     "name": "make_chunk_id",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 398,
+    "line": 403,
     "context": "def make_chunk_id(rel: str, start_line: int, end_line: int) -> str:"
   },
   {
     "name": "chunk_markdown",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 401,
+    "line": 406,
     "context": "def chunk_markdown(path: Path, text: str, max_lines: int = 42, overlap: int = 6) -> list[dict[str, Any]]:"
   },
   {
     "name": "chunk_plain_text",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 442,
+    "line": 447,
     "context": "def chunk_plain_text(path: Path, text: str, max_lines: int = 40, overlap: int = 6) -> list[dict[str, Any]]:"
   },
   {
     "name": "build_chunks_for_file",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 477,
+    "line": 482,
     "context": "def build_chunks_for_file(path: Path) -> list[dict[str, Any]]:"
   },
   {
     "name": "extract_symbols",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 485,
+    "line": 490,
     "context": "def extract_symbols(path: Path, text: str) -> list[dict[str, Any]]:"
   },
   {
     "name": "add_symbol",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 492,
+    "line": 497,
     "context": "def add_symbol(symbol_type: str, name: str, line_no: int, context: str) -> None:"
   },
   {
     "name": "load_json",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 536,
+    "line": 541,
     "context": "def load_json(path: Path, default: Any) -> Any:"
   },
   {
     "name": "load_jsonl",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 541,
+    "line": 546,
     "context": "def load_jsonl(path: Path) -> list[dict[str, Any]]:"
   },
   {
     "name": "write_json",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 552,
+    "line": 557,
     "context": "def write_json(path: Path, data: Any) -> None:"
   },
   {
     "name": "write_jsonl",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 556,
+    "line": 561,
     "context": "def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:"
   },
   {
     "name": "build_all_indexes",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 562,
+    "line": 567,
     "context": "def build_all_indexes() -> dict[str, Any]:"
   },
   {
     "name": "build_vector_index",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 629,
+    "line": 634,
     "context": "def build_vector_index() -> dict[str, Any]:"
   },
   {
     "name": "load_chunk_map",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 665,
+    "line": 670,
     "context": "def load_chunk_map() -> dict[str, dict[str, Any]]:"
   },
   {
     "name": "load_vector_map",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 669,
+    "line": 674,
     "context": "def load_vector_map() -> dict[str, list[float]]:"
   },
   {
     "name": "metadata_alignment_bonus",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 673,
+    "line": 678,
     "context": "def metadata_alignment_bonus(chunk: dict[str, Any], query_meta: dict[str, list[str]]) -> float:"
   },
   {
     "name": "metadata_bonus",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 687,
+    "line": 692,
     "context": "def metadata_bonus(chunk: dict[str, Any], query: str, query_meta: dict[str, list[str]]) -> float:"
   },
   {
     "name": "chunk_text_for_matching",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 699,
+    "line": 704,
     "context": "def chunk_text_for_matching(chunk: dict[str, Any]) -> str:"
   },
   {
     "name": "query_coverage_score",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 709,
+    "line": 714,
     "context": "def query_coverage_score(chunk: dict[str, Any], query_terms: list[str]) -> float:"
   },
   {
     "name": "phrase_match_score",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 717,
+    "line": 722,
     "context": "def phrase_match_score(chunk: dict[str, Any], query_variants: list[str]) -> float:"
   },
   {
     "name": "intent_bonus",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 728,
+    "line": 733,
     "context": "def intent_bonus(chunk: dict[str, Any], query_intent: dict[str, bool]) -> float:"
+  },
+  {
+    "name": "ready_model_bonus",
+    "type": "function",
+    "path": "scripts\\rag_index_lib.py",
+    "line": 755,
+    "context": "def ready_model_bonus(chunk: dict[str, Any], query_variants: list[str]) -> float:"
   },
   {
     "name": "matched_query_terms",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 750,
+    "line": 785,
     "context": "def matched_query_terms(chunk: dict[str, Any], query_terms: list[str], limit: int = 12) -> list[str]:"
   },
   {
     "name": "rerank_results",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 755,
+    "line": 790,
     "context": "def rerank_results("
   },
   {
     "name": "keyword_score",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 777,
+    "line": 814,
     "context": "def keyword_score(chunk: dict[str, Any], query_terms: list[str]) -> float:"
   },
   {
     "name": "passes_filters",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 784,
+    "line": 821,
     "context": "def passes_filters("
   },
   {
     "name": "search_chunks_detailed",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 809,
+    "line": 846,
     "context": "def search_chunks_detailed("
   },
   {
     "name": "search_chunks",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 888,
+    "line": 925,
     "context": "def search_chunks("
   },
   {
     "name": "citation_of",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 910,
+    "line": 947,
     "context": "def citation_of(result: dict[str, Any]) -> str:"
   },
   {
     "name": "build_grounded_answer_pack",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 913,
+    "line": 950,
     "context": "def build_grounded_answer_pack("
   },
   {
     "name": "search_symbols",
     "type": "function",
     "path": "scripts\\rag_index_lib.py",
-    "line": 982,
+    "line": 1019,
     "context": "def search_symbols(query: str, top_k: int = 10) -> list[dict[str, Any]]:"
   },
   {

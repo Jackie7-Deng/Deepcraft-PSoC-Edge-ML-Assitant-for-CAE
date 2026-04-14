@@ -1,6 +1,6 @@
 # 文档地图
 
-**更新日期**: 2026-03-10  
+**更新日期**: 2026-03-25  
 **用途**: 作为全局导航入口，先缩小搜索范围，再进入 PDF、README、网页归档、结构化索引或源码。
 
 ---
@@ -13,9 +13,17 @@
 | 高频问题 / 经验问题 | `knowledge/faq.md` | `knowledge/assistant_user_guide.md` |
 | ModusToolbox 工具链 / BSP / Makefile | `knowledge/modustoolbox_tools_summary.md` | `docs/MTB_docs/*.pdf`、README |
 | 参数 / 上下文缺失 | `knowledge/parameters_catalog.md` | README、工作流文档、示例代码 |
+| 版本兼容 / MTB 3.6 / 3.7 | `knowledge/version_compatibility_guide.md` | `docs/release_notes/*.pdf`、README |
+| Memory / linker / XIP / SoCMEM 布局 | `knowledge/memory_layout_guide.md` | `docs/application_notes/*.pdf`、`knowledge/parameters_catalog.md` |
+| KIT_PSE84_AI / 板级接口 / 原理图入口 | `knowledge/index_ai_kit_guide.md` | `docs/kit_guides/*` |
+| 资料盘点 / 缺什么文档 | `knowledge/source_inventory.md` | `docs/`、`code/`、`knowledge/document_map.md` |
+| 外部检索策略 / MCP 关键词 | `knowledge/retrieval_strategy.md` | `scripts/search_utils.py`、`mcp_servers/infineon_browser_server.py` |
+| Community / Case 经验沉淀 | `knowledge/community_digest.md` | Community / Case MCP 结果、`knowledge/faq.md` |
 | 排障 | `knowledge/troubleshooting_playbook.md` | README、源码、PDF |
 | 示例选择 | `knowledge/examples_catalog.md` | `docs/readmes/README_*.md` |
+| Ready Models / 测试报告 | `knowledge/ready_models_catalog.md` | `docs/ready_model_notes/*.pdf`、`ingest/html/deepcraft-ready-models*.md`、`ingest/html/legal_licensing-metrics-and-fees.md` |
 | DEEPCRAFT 网页内容 | `knowledge/deepcraft_web_catalog.md` | `knowledge/deepcraft_web_backfill_20260310.md`、`ingest/urls_checked.txt`、`ingest/url_success.txt`、`ingest/url_missing.txt`、`ingest/fetch_audit.json`、`ingest/html/*.md` |
+| 异常振动训练 | `docs/机器震动异常检测模型训练指南.md` | `docs/readmes/README_AnomalousVibrationDetection.md` |
 | 结构化检索 / RAG | `knowledge/retrieval_guide.md` | `indexes/index_summary.json`、`indexes/text_chunks.jsonl` |
 | PSoC Edge TRM / Kit / Registers | `knowledge/index_architecture_rm.md`、`knowledge/index_kit_guide.md`、`knowledge/index_registers_rm.md` | 对应 `docs/**/*.pdf` |
 | 工作区怎么用 | `README.md`、`knowledge/usage_guide.md` | `CLAUDE.md`、`.github/copilot-instructions.md` |
@@ -26,12 +34,21 @@
 - `knowledge/faq.md`
 - `knowledge/modustoolbox_tools_summary.md`
 - `knowledge/parameters_catalog.md`
+- `knowledge/version_compatibility_guide.md`
+- `knowledge/memory_layout_guide.md`
+- `knowledge/index_ai_kit_guide.md`
 - `knowledge/troubleshooting_playbook.md`
+- `knowledge/code_map.md`
+- `knowledge/evidence_scoring.md`
 - `knowledge/ml_workflow.md`
 - `knowledge/examples_catalog.md`
 - `knowledge/api_reference.md`
 - `knowledge/usage_guide.md`
 - `knowledge/retrieval_guide.md`
+- `knowledge/retrieval_strategy.md`
+- `knowledge/source_inventory.md`
+- `knowledge/community_digest.md`
+- `knowledge/ready_models_catalog.md`
 - `knowledge/deepcraft_web_catalog.md`
 - `knowledge/deepcraft_web_backfill_20260310.md`
 - `README.md`
@@ -49,6 +66,8 @@
 - `scripts/evaluate_retrieval.py`
 - `scripts/evaluate_grounded_answer.py`
 - `scripts/symbol_search.py`
+- `scripts/evidence_arbitrator.py`
+- `run_mcp_regression.py`
 - `mcp_servers/vector_search_server.py`
 - `scripts/refresh_html_mirror.py`
 
@@ -57,4 +76,11 @@
 - `memory/SESSION_STATE.md`
 - `governance/CURRENT_STATUS.md`
 - `governance/ASSISTANT_TRAINING_AUDIT_LOG.md`
+- `TODO.md`
+- `plan_gap_analysis.md`
+- `issues_log.md`
+- `knowledge_governance.md`
+- `mcp_regression_suite.md`
+- `mcp_observability.md`
+- `rag_regression.md`
 - `knowledge/improvement_plan.md`

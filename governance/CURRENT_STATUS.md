@@ -1,6 +1,6 @@
 # 当前状态
 
-**更新日期**: 2026-03-11
+**更新日期**: 2026-03-25
 **工作区**: `PSoC_Edge_DeepCraft_AI`
 
 ## 当前结论
@@ -13,6 +13,8 @@
 - 当前网页主题摘要：`knowledge/deepcraft_web_backfill_20260310.md`
 - 当前网页导航入口：`knowledge/deepcraft_web_catalog.md`
 - 当前治理记录：`governance/ASSISTANT_TRAINING_AUDIT_LOG.md`
+- 当前 Ready Model 本地目录：`docs/ready_model_notes/`
+- 当前 Ready Model 导航入口：`knowledge/ready_models_catalog.md`
 
 此外，本轮已经补上 **ModusToolbox 工具链知识入口** 与 **RAG 基础评测 / metadata 能力**：
 
@@ -41,6 +43,8 @@
 9. 为本地 RAG 增加 metadata 标签、自然边界切分与检索回归样例。
 10. 为本地 RAG 增加查询改写、显式 rerank、grounded answer 与回答约束评测。
 11. 新增根目录 `README.md`，把“用户如何用、是否要手动运行 RAG/MCP”说清楚。
+12. 清理根目录示例 `README_*.md` 的重复摆放，统一由 `docs/readmes/` 作为归档入口。
+13. 新增 `docs/ready_model_notes/` 8 份 Ready Model 测试报告，并通过 `knowledge/ready_models_catalog.md` 接入知识导航主链。
 
 ## 本轮抓取状态
 
@@ -61,6 +65,7 @@
 - `ingest/html/` 已收敛为当前 checked 基线成功抓取的 127 个镜像文件；后续继续以 `fetch_audit.json` / `url_success.txt` 为准。
 - 站点未来如果再次改版，仍需要以新的人工审核清单为准重新刷新，而不是自动继承旧 URL 假设。
 - 当前 RAG 已补上标准检索回归样例、基础 metadata 过滤、查询改写、显式 rerank 与 grounded answer；但仍缺少更强的模型级 query rewrite、多级索引摘要层与自动 citation validator。
+- 当前 `docs/ready_model_notes/*.pdf` 尚未做页级文本抽取；目前通过 `knowledge/ready_models_catalog.md` 作为检索入口，后续仍可补 PDF 解析 / citation validator。
 
 ## 本轮验证
 
@@ -74,7 +79,9 @@
 - `governance/ASSISTANT_TRAINING_AUDIT_LOG.md` 已同步：通过
 - `knowledge/modustoolbox_tools_summary.md` 已新增并接入知识链：通过
 - `scripts/evaluate_retrieval.py` / `evals/retrieval_cases.json` 已新增：通过
-- 本轮索引重建完成：`file_count=417`、`chunk_count=5587`、`symbol_count=14245`：通过
+- `knowledge/ready_models_catalog.md` 已新增并接入主导航链：通过
+- 根目录重复 `README_*.md` 已清理，`docs/readmes/` 归档保留：通过
+- 本轮索引重建完成：`file_count=405`、`chunk_count=5446`、`symbol_count=14121`：通过
 - 本轮检索回归：`8/8` 命中，`hit_rate=100%`：通过
 - `scripts/grounded_answer.py` / `scripts/evaluate_grounded_answer.py` / `evals/grounded_answer_cases.json` 已新增：通过
 - grounded answer 约束评测：`4/4` 通过，`ok_rate=100%`：通过

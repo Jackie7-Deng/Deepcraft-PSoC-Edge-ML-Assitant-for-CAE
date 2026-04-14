@@ -1,6 +1,6 @@
 # 助手使用说明
 
-**更新日期**: 2026-03-11  
+**更新日期**: 2026-03-25  
 **定位**: 给人类使用者看的完整使用手册。相比根目录 `README.md`，这里更详细地说明提问方式、RAG / MCP 使用边界、维护动作与推荐路径。
 
 ## 1. 当前专属助手已经能做什么
@@ -134,6 +134,7 @@ python scripts\evaluate_grounded_answer.py --write-report
 - 全局导航：`knowledge/document_map.md`
 - 一页纸总览：`knowledge/overview.md`
 - 高频问答：`knowledge/faq.md`
+- Ready Model 报告目录：`knowledge/ready_models_catalog.md`
 - ModusToolbox 工具链：`knowledge/modustoolbox_tools_summary.md`
 - 参数入口：`knowledge/parameters_catalog.md`
 - 排障入口：`knowledge/troubleshooting_playbook.md`

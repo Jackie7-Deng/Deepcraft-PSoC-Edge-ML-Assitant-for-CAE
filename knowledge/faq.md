@@ -298,3 +298,497 @@ BSP 会决定目标板卡/套件、板级资源假设和构建目标；如果 BS
 1. 先问清用户改的是哪个 configurator。
 2. 若症状是模型/中间件行为异常，优先看 library-level 配置。
 3. 若症状是外设、时钟、DMA、引脚异常，优先看 Device Configurator。
+
+## Q11：不同示例对 ModusToolbox / ML Pack 的版本要求是否一致？
+
+### 结论
+
+不一致，必须按具体工程回答。当前本地资料至少能确认三条不同口径：PSoC 6 Imagimob MTBML Deploy 需要 ModusToolbox 3.1+ 与 ML Pack 2.0+；Face ID Demo 需要 ModusToolbox 3.6+；KIT_PSE84_EVAL 用户指南把板卡软件准备写成 ModusToolbox 3.8+。因此，不能把某个示例的版本要求当成整个 PSoC Edge / PSoC 6 体系的统一要求。
+
+### 适用前提
+
+- 用户问最低需要哪个 ModusToolbox 版本
+- 用户在不同示例之间切换，或把 PSoC 6 与 PSoC Edge 资料混在一起
+
+### 证据
+
+- `docs/readmes/README_mtb-example-ml-imagimob-mtbml-deploy.md:45-53`
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md:44-49`
+- `knowledge/index_kit_guide.md:89-98`
+
+### 解释
+
+PSoC 6 Imagimob 示例明确把工具链前提写成 ModusToolbox 3.1+ 和 ML Pack 2.0+；Face ID Demo 把示例要求写成 ModusToolbox 3.6+；而套件级用户指南又给出了 3.8+ 的安装口径。这说明版本要求和示例套件文档工具安装指南三种证据层有关，回答时必须先确认用户实际在跑哪个工程。
+
+### 建议动作
+
+1. 先确认工程路径与 README。
+2. 再确认是否还需要安装 ML Pack。
+3. 如果用户只说PSoC Edge 工程，不要直接给唯一版本号，而应说明按具体示例 README 为准。
+
+---
+
+## Q12：Face ID Demo 运行前必须准备哪些硬件？
+
+### 结论
+
+Face ID Demo 至少要确认三类硬件条件：目标板卡属于 `KIT_PSE84_EVAL_EPC2` / `KIT_PSE84_EVAL_EPC4` / `KIT_PSE84_AI`，显示端接 4.3 英寸 DSI LCD，摄像头端接受支持的 USB 摄像头；若是 `KIT_PSE84_EVAL`，还要确认 `BOOT SW` 为 HIGH/ON 且 `J20/J21` 处于 NC。
+
+### 适用前提
+
+- 首次上板运行 Face ID Demo
+- 用户说工程能编过，但屏幕/摄像头没起来
+
+### 证据
+
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md:57-72`
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md:73-92`
+- `knowledge/examples_catalog.md:24-35`
+
+### 解释
+
+README 明确列出了支持套件、显示屏、摄像头与跳线/开关前提。当前示例目录也把 Face ID Demo 的硬件依赖写成摄像头模块、LCD 显示屏。因此，如果屏幕无画面、摄像头无输入或程序启动后行为异常，第一步应先核对硬件链而不是直接怀疑模型。
+
+### 建议动作
+
+1. 先确认板卡型号与 `TARGET`。
+2. 再确认摄像头接在 USB host 口、DSI 显示线已接好。
+3. 若是 `KIT_PSE84_EVAL`，补查 `BOOT SW`、`J20`、`J21`。
+
+---
+
+## Q13：为什么 Face ID Demo 或 DEEPCRAFT 视觉/运动示例在 GCC_ARM RELEASE 下容易编译失败？
+
+### 结论
+
+当前本地 README 明确记录了一个共同限制：Face ID Demo、DEEPCRAFT Vision 与 DEEPCRAFT Motion 示例都可能在 `GCC_ARM` 的 `RELEASE` 模式下因 CMSIS-DSP 的 Helium 指令不被识别而构建失败。
+
+### 适用前提
+
+- 目标工程是 PSoC Edge E84 的 Face ID / Deploy Vision / Deploy Motion
+- 症状表现为 RELEASE 才失败，Debug 能通过或 armclang 能通过
+
+### 证据
+
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md:51-56`
+- `docs/readmes/README_DEEPCRAFT_Deploy_Vision.md:45-53`
+- `docs/readmes/README_DEEPCRAFT_Deploy_Motion.md:50-59`
+
+### 解释
+
+三个 README 都把同类限制写成显式 Note，说明这不是个别工程的偶发现象，而是当前工具链/库组合下的已知限制。如果用户只贴build failed，应优先追问是不是 `GCC_ARM + RELEASE`，不要直接把问题归因到模型或 BSP。
+
+### 建议动作
+
+1. 先确认 `CONFIG` 与 `TOOLCHAIN`。
+2. 如果是 `GCC_ARM + RELEASE`，优先尝试 Debug、`ARM` 或 `LLVM_ARM` 路径。
+3. 回答时明确这是 README 已知限制，而不是通用 C 代码错误。
+
+---
+
+## Q14：切换 DEEPCRAFT 运动模型时，最容易漏改哪些参数？
+
+### 结论
+
+最容易漏改的是 CPU 运行核心、量化类型和 IMU 传感器通道配置，也就是 `ML_DEEPCRAFT_CPU`、`NN_TYPE` 和 `IMU_ENABLE_SENSOR`。如果使用跨板卡迁移的数据，还要注意 `SENSOR_REMAPPING` 是否保持与训练假设一致。
+
+### 适用前提
+
+- `README_DEEPCRAFT_Deploy_Motion.md` 对应的 PSoC Edge 运动部署工程
+- 需要替换模型、切换 CM33/CM55 或调整 IMU 轴数据
+
+### 证据
+
+- `docs/readmes/README_DEEPCRAFT_Deploy_Motion.md:87-104`
+- `docs/readmes/README_DEEPCRAFT_Deploy_Motion.md:128-133`
+
+### 解释
+
+该示例把模型推理位置、量化配置和 IMU 传感器选择都放在 `common.mk` / `proj_cmxx/Makefile` 中，不是替换模型文件就完事。README 还特别提到 BMI270 默认对齐到 CY8CKIT-062S2-AI 的姿态，如果训练和部署板卡姿态不一致，推理结果会偏移。
+
+### 建议动作
+
+1. 替换模型前先记录 `common.mk` 与两个 Makefile 的当前值。
+2. 确认模型是 `float` 还是 `int8x8`。
+3. 如果跨板卡复用数据，检查 `SENSOR_REMAPPING`。
+
+---
+
+## Q15：DEEPCRAFT 数据采集示例为什么连上板后，Studio 还是收不到数据？
+
+### 结论
+
+优先检查三件事：是否使用了专门的数据传输 USB 口、主机端是否是 Windows、以及板上 LED1 是否在报 USB/UART/I2C/SPI/Memory 等错误码。当前 README 还明确说明 DEEPCRAFT Studio 当前只支持 Windows。
+
+### 适用前提
+
+- `README_DEEPCRAFT_Data_Collection.md` 对应的 E84 数据采集工程
+- 用户现象是串口日志正常，但 Studio 无法看到流数据或采集过程中断
+
+### 证据
+
+- `docs/readmes/README_DEEPCRAFT_Data_Collection.md:30-32`
+- `docs/readmes/README_DEEPCRAFT_Data_Collection.md:42-43`
+- `docs/readmes/README_DEEPCRAFT_Data_Collection.md:85-94`
+- `docs/readmes/README_DEEPCRAFT_Data_Collection.md:150-189`
+
+### 解释
+
+该示例区分了 KitProg3 调试口与 USB-device 数据传输口。README 还提供了 LED1 的错误闪烁表，可以把数据没到 Studio进一步分流成 USB 连接错误、UART 错误、I2C/SPI 错误或内存错误。
+
+### 建议动作
+
+1. 先确认主机是 Windows。
+2. 检查数据线是否接在 README 指定的 USB-device 口，而不是只接了 KitProg3。
+3. 如果仍失败，记录 LED1 错误模式再继续排障。
+
+---
+
+## Q16：烧录失败时，第一优先应该看什么？
+
+### 结论
+
+优先看 `KitProg3` 连接、板卡模式/跳线和所选烧录路径是否匹配当前工程。KIT_PSE84_EVAL 用户指南把Device not found / Programming failed / Debug connection lost分别对应到驱动、模式开关和调试器复位检查；PSoC 6 Imagimob README 则把标准烧录路径写成 Quick Panel 的 `Program (KitProg3_MiniProg4)` 或 `make program`。
+
+### 适用前提
+
+- `make program` 失败
+- IDE 里 Program/Debug 配置失败
+- 板卡枚举但无法烧录
+
+### 证据
+
+- `knowledge/index_kit_guide.md:101-120`
+- `docs/readmes/README_mtb-example-ml-imagimob-mtbml-deploy.md:208-255`
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md:132-139`
+
+### 解释
+
+本地资料把烧录路径和板卡准备分成两层：一层是 Program/Debug 命令，另一层是 KitProg3/板卡状态。如果只盯着 IDE 报错而不检查驱动、USB 连接口和模式开关，通常很难快速定位。
+
+### 建议动作
+
+1. 先确认板卡是否通过 KitProg3 USB 接到 PC。
+2. 对 PSoC Edge 先核对 BOOT/J20/J21 等板级前提。
+3. 重新尝试 Quick Panel Program 或 `make program`，必要时重装驱动或复位 KitProg3。
+
+---
+
+## Q17：[来源：community] ModusToolbox 工程刚创建就 build error，第一步该做什么？
+
+### 结论
+
+先进入 `modus shell`，切到包含 `Makefile` 的工程目录，执行 `make getlibs`，再执行 `make clean && make build`。社区把这一步作为依赖未拉齐场景的首选动作。
+
+### 适用前提
+
+- PSoC 6 / ModusToolbox 工程刚创建
+- 错误像是缺库、缺依赖、工程未完整初始化
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `https://community.infineon.com/t5/PSOC-6/ModusToolbox-Build-error/td-p/636941`
+
+### 解释
+
+社区答复没有先让用户改源码，而是先补依赖并重建。这说明很多“刚创建就编不过”的问题，本质上是 getlibs 没做完或工程目录不完整。
+
+### 建议动作
+
+1. 在 `modus shell` 中进入工程目录。
+2. 执行 `make getlibs`。
+3. 再执行 `make clean && make build`。
+
+---
+
+## Q18：[来源：community] PSoC 6 双核工程 flash overflow 时应该改哪些地方？
+
+### 结论
+
+至少同步检查三处：CM0+ linker 的 flash `LENGTH`、CM4 linker 的 `FLASH_CM0P_SIZE`，以及 `psoc6.h` 中的 CM4 application start address。
+
+### 适用前提
+
+- PSoC 6 双核工程
+- 编译报 flash overflow，或者改了 CM0+ 分配后又和 CM4 区域冲突
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `https://community.infineon.com/t5/Knowledge-Base-Articles/Flash-overflow-Change-the-PSoC-6-CM0-flash-allocation-in-ModusToolbox-2-4/ta-p/336607`
+
+### 解释
+
+社区 KBA 明确说明只改单个 linker 文件不够，必须把双核共享的 flash 边界保持一致，否则会从“CM0+ 不够”变成“CM4 冲突”。
+
+### 建议动作
+
+1. 先改 CM0+ linker 的 flash 长度。
+2. 再让 CM4 linker 的 `FLASH_CM0P_SIZE` 对齐。
+3. 最后检查 `psoc6.h` 起始地址。
+
+---
+
+## Q19：[来源：community] Face ID Demo 的 `ifx_face_id_inference()` 内部实现和模型结构在哪里看？
+
+### 结论
+
+社区当前公开答复是回到 GitHub 仓库的 README 和 `docs/design_and_implementation.md`，而不是在帖子正文中展开预编译库内部细节。
+
+### 适用前提
+
+- PSoC Edge Face ID Demo
+- 想了解内部模型数量、输入输出格式、预处理 / 后处理或自定义模型替换路径
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `https://community.infineon.com/t5/PSOC-Edge/Support-Request-PSOC-Edge-E84-Face-ID-Demo-ifx-face-id-inference-Details-and/td-p/1187681`
+- `docs/readmes/README_Machine_Learning_Face_ID_Demo.md`
+
+### 解释
+
+这说明社区层面对 Face ID 预编译库公开信息有限；若用户需要内部实现细节，优先读本地仓库文档，而不是指望社区贴提供完整 API 设计说明。
+
+### 建议动作
+
+1. 先读 Face ID 示例 README。
+2. 再读仓库 `docs/design_and_implementation.md`。
+3. 若仍需内部实现细节，明确说明当前公开资料有限。
+
+---
+
+## Q20：[来源：community] 把 voice assistant 和 Face ID 合进一个 PSoC Edge E84 工程可行吗？
+
+### 结论
+
+可行，但社区明确说“未正式测试”。首要瓶颈是共享核心和共享内存区的管理，尤其是 `m55_data_secondary`、`.cy_xip`、`.heap` 相关溢出。
+
+### 适用前提
+
+- PSoC Edge E84
+- 需要同时跑关键词检测和 Face ID
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `https://community.infineon.com/t5/PSOC-Edge/combine-the-demo-codes-of-voice-assistant-with-the-face-ID-recognition-for-PSOC/td-p/1197475`
+
+### 解释
+
+社区建议以 local voice code example 为 base 再叠加 Face ID。用户回复还表明，把关键词检测放到 CM33、Face ID 放到 CM55 后虽然能运行，但识别命中率仍可能掉到 10%~15%，所以这不是单纯“编过就算成功”的问题。
+
+### 建议动作
+
+1. 先做内存布局评估。
+2. 优先以 voice 示例为 base 集成。
+3. 分别验证编译通过、运行稳定和命中率。
+
+---
+
+## Q21：[来源：case] PSoC Edge E84 烧录时报 `Can't find target/cat1d.cfg` 应先查什么？
+
+### 结论
+
+优先检查 `ModusToolbox Programming tools` 版本。Case 记录给出的已验证路径是：PSoC Edge EAP 使用 `1.2.1`，并卸载 `1.3.1` 后问题消失。
+
+### 适用前提
+
+- PSoC Edge E84 EVK
+- OpenOCD / Program 阶段报 `Can't find target/cat1d.cfg`
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `IFX-250322-1644913`
+
+### 解释
+
+这类报错不是典型的用户代码错误，而更像是工具包版本与 target 配置不匹配。Case 中用户最终确认“it works”，说明这是已验证可复现的处理路径。
+
+### 建议动作
+
+1. 先记录当前 Progtools 版本。
+2. 对照是否为 EAP 场景。
+3. 必要时切回 `1.2.1` 并卸载 `1.3.1`。
+
+---
+
+## Q22：[来源：case] MTB-ML 导入或部署自训练模型异常时，最先该怀疑什么？
+
+### 结论
+
+优先怀疑两类问题：数据 / 模型格式不符合 ML 用户指南要求，或者模型里含有当前 Edge 工具链不支持的算子。对现成模型部署，还要检查是否缺少与训练流程配套的 DeepCraft 预处理代码。
+
+### 适用前提
+
+- PSoC Edge
+- MTB-ML / DeepCraft / Imagimob 模型导入或部署报错
+
+### 证据
+
+- `knowledge/community_digest.md`
+- `IFX-250911-1842110`
+- `IFX-250728-1789988`
+
+### 解释
+
+Case 记录显示，先按 `ml-user-guider` 规范格式后，可以至少生成基础 `.c/.h`；但真实模型仍可能因为不支持的算子而无法完整部署。另一条 case 还说明，DeepCraft 生成的预处理代码不是多余部分，而是保证部署端输入与训练数据一致的关键。
+
+### 建议动作
+
+1. 先按 ML 用户指南核对模型和数据格式。
+2. 再检查模型是否使用了不支持的算子。
+3. 对现成模型部署，确认预处理代码是否与模型一起迁移。
+
+---
+
+## Q23：PSoC Edge 的 memory placement 问题现在优先查哪份本地资料？
+
+### 结论
+
+优先查两份刚接入的本地 memory 资料：AN239774 负责“内部/外部 memory、默认 BSP 布局、linker/VMA/LMA、性能与功耗权衡”，CTW 负责“内存类型、默认地址映射、Lab 风格的 code/data placement 示例”。这两份文档已经足以替代之前 community 里只回指 whitepaper 的空缺。
+
+### 适用前提
+
+- 用户问模型放哪、固件放哪、buffer 放哪
+- 用户问 XIP / SoCMEM / ITCM / DTCM / SMIF 的默认布局
+
+### 证据
+
+- `docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#19`
+- `docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#23`
+- `docs/application_notes/infineon-psoc-edge-memory-usage-ctw-en.pdf#17`
+- `knowledge/memory_layout_guide.md`
+
+### 解释
+
+AN239774 已经明确写了 default memory configuration、external flash layout 和 linker 机制；CTW 则把默认地址和 EVK 默认启用的 SMIF 设备用训练材料形式重新整理了一遍。
+
+### 建议动作
+
+1. 先看 `knowledge/memory_layout_guide.md`。
+2. 需要精确页码时再跳回对应 PDF 页。
+3. 遇到 community 只给“去看 whitepaper”的答复时，直接切回本地 memory 文档链。
+
+---
+
+## Q24：为什么在 SMIF 写/擦期间从 XIP 执行代码会出问题？
+
+### 结论
+
+因为部分外部 memory IC 不支持 Read While Write (RWW)。当同一颗通过 SMIF 连接的外部 memory 正在写/擦时，如果还从该 memory 做 XIP 读访问，系统可能直接 fault。
+
+### 适用前提
+
+- 固件升级
+- 外部 flash 日志写入
+- 双核共享外部 flash / RAM
+
+### 证据
+
+- `docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#8`
+
+### 解释
+
+应用笔记给出的缓解动作很明确：把关键代码搬到 SRAM / SoCMEM；避免关键流程依赖 XIP；在双核场景下做 core synchronization。
+
+### 建议动作
+
+1. 先确认目标 memory IC 是否支持 RWW。
+2. 升级或写 flash 时，把关键流程迁到内部 memory。
+3. 若是双核，增加 CM33 / CM55 的互锁与同步。
+
+---
+
+## Q25：PSoC Edge 的 linker memory region 改了却不生效，先查哪里？
+
+### 结论
+
+先查 Device Configurator 自动生成的 `cymem_<Toolchain>_<Core>` 文件，而不是只盯主 linker。PSoC Edge 的 memory region 定义会先落到 `bsps/TARGET_<BSP>/config/GeneratedSource/` 下的 generated linker 文件，再被默认 linker include。
+
+### 适用前提
+
+- 改了 memory region / custom section
+- 链接结果与预期 region 不一致
+- 不确定问题在 Device Configurator 还是 toolchain linker
+
+### 证据
+
+- `docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#25`
+- `docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#38`
+
+### 解释
+
+应用笔记明确说明 memory region 在 Device Configurator 的 `Memory` tab 里定义，生成文件随后参与主 linker 过程。如果 generated file 没更新或没被 include，再改主 linker 很容易越改越乱。
+
+### 建议动作
+
+1. 先确认 `GeneratedSource/cymem_*` 是否已更新。
+2. 再确认主 linker 是否 include 了该文件。
+3. 最后才继续改 section 和 region 对应关系。
+
+---
+
+## Q26：如果用户问“我该装 ModusToolbox 3.6 还是 3.7”，应该怎么回答？
+
+### 结论
+
+不要直接给单一版本号。先按**具体工程 README**确认最低要求，再用 3.6 / 3.7 release notes 判断工具行为差异。当前本地资料能明确：3.6 已包含 PSoC Edge 相关 Device Configurator 增强与 LLVM 路径；3.7 新增 `memoryreport`，并补充了代理、`.mtb` 依赖 tag、BSP Assistant 等已知问题的 workaround。
+
+### 适用前提
+
+- 用户在不同示例之间切换
+- 用户问升级值不值得
+- 用户已经遇到 build / getlibs / memory / proxy 相关问题
+
+### 证据
+
+- `knowledge/version_compatibility_guide.md`
+- `docs/release_notes/mt3.6_release_notes.pdf#4`
+- `docs/release_notes/mt3.6_release_notes.pdf#15`
+- `docs/release_notes/mt3.7_release_notes.pdf#3`
+- `docs/release_notes/mt3.7_release_notes.pdf#6`
+- `docs/release_notes/mt3.7_release_notes.pdf#15`
+
+### 解释
+
+版本问题通常有两层：一层是“当前工程 README 最低支持什么”，另一层是“当前 tools package 会不会引入或修复你现在碰到的问题”。如果把这两层混成一句“请装最新版”，经常会答偏。
+
+### 建议动作
+
+1. 先确认具体工程。
+2. 再看该工程对应 README 的最低要求。
+3. 若问题落在 memory report、proxy、`make getlibs`、BSP Assistant 或 LLVM，再回到 release notes 判断 3.6 / 3.7 差异。
+
+---
+
+## Q27：DEEPCRAFT Model Converter 现在本地能确认支持哪些输入和目标设备？
+
+### 结论
+
+根据新加入的 Customer Connector PDF，当前本地证据可确认 Model Converter 支持 `.h5`、`.tflite`、`.pt2` 输入格式，目标设备至少包括 `PSoC 6`、`PSoC Edge M33/NNLite` 和 `PSoC Edge M55/U55`，并同时提供 GUI 与 CLI。
+
+### 适用前提
+
+- 用户问 BYOM
+- 用户问是否必须用 GUI
+- 用户问某类模型能不能转到 PSoC 6 / PSoC Edge
+
+### 证据
+
+- `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#3`
+- `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#4`
+- `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf#6`
+- `knowledge/ml_workflow.md`
+
+### 解释
+
+这份 PDF 属于比网页摘要更直接的产品资料，因此回答格式、目标器件、GUI/CLI 与 desktop validation 这类问题时，应优先引用它，而不是只引用社区经验。
+
+### 建议动作
+
+1. 先确认模型格式是 `.h5` / `.tflite` / `.pt2` 哪一种。
+2. 再确认目标是 PSoC 6 还是 PSoC Edge 的哪条部署链。
+3. 需要集成上板时，再回到 `knowledge/ml_workflow.md` 和目标工程 README。

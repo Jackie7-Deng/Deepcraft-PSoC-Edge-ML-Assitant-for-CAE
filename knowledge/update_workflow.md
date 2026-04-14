@@ -36,15 +36,17 @@ python scripts\\run_ingest_pipeline.py
 # - TRM/AUM → docs/trm_aum/
 # - Application Note → docs/application_notes/
 # - Kit Guide → docs/kit_guides/
+# - Ready Model Test Report → docs/ready_model_notes/
 
 # 步骤 2：重命名文件（规范化）
 # 在资源管理器或 PowerShell 中移动到 docs\\<category>\\normalized_name.pdf
 
 # 步骤 3：创建索引文件
-# knowledge/index_<document>.md
+# - 通用 PDF：knowledge/index_<document>.md
+# - Ready Model 报告：更新 knowledge/ready_models_catalog.md
 
 # 步骤 4：更新 document_map.md
-# 添加新文档条目
+# 添加新文档条目；若为 Ready Model，同时更新 overview / retrieval_guide
 
 # 步骤 5：更新 workspace_inventory.md
 # 添加到文件清单
@@ -91,6 +93,7 @@ Get-Content ingest\\url_missing.txt -TotalCount 80
 - [ ] `workspace_inventory.md` 文件计数与实际一致
 - [ ] `document_map.md` 路径有效
 - [ ] `examples_catalog.md` 链接可访问
+- [ ] `ready_models_catalog.md` 与 `docs/ready_model_notes/` 路径一致
 
 ---
 

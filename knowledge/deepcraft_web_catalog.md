@@ -49,6 +49,7 @@
 3. 若要确认当前页面是否成功抓到，查看 `ingest/url_success.txt` 或 `ingest/url_missing.txt`。
 4. 若需要逐条状态、重试次数、redirect、输出文件，查看 `ingest/fetch_audit.json`。
 5. 若需要回溯网页正文，再进入 `ingest/html/*.md` 对应镜像文件。
+6. 若问题属于 Ready Models，且需要结合本地 PDF 测试报告，优先转到 `knowledge/ready_models_catalog.md`。
 
 ## 5. 本轮抓取结果与边界
 

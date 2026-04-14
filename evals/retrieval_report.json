@@ -166,8 +166,8 @@
           "evidence_tier": "other"
         },
         {
-          "path": "README_DEEPCRAFT_Deploy_Motion.md",
-          "score": 0.334464,
+          "path": "docs\\readmes\\README_DEEPCRAFT_Deploy_Motion.md",
+          "score": 0.331125,
           "doc_class": "readme",
           "evidence_tier": "primary_doc"
         }
@@ -197,12 +197,6 @@
           "evidence_tier": "primary_doc"
         },
         {
-          "path": "README_mtb-example-ml-imagimob-mtbml-deploy.md",
-          "score": 1.572701,
-          "doc_class": "readme",
-          "evidence_tier": "primary_doc"
-        },
-        {
           "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
           "score": 1.925279,
           "doc_class": "readme",
@@ -213,6 +207,12 @@
           "score": 1.505637,
           "doc_class": "knowledge_summary",
           "evidence_tier": "curated_summary"
+        },
+        {
+          "path": "Machine_Learning_Imagimob_MTBML_Deploy\\README.md",
+          "score": 1.871293,
+          "doc_class": "readme",
+          "evidence_tier": "primary_doc"
         }
       ]
     },

@@ -1,6 +1,6 @@
 # PSoC Edge + DEEPCRAFT 专属助手工作区
 
-**更新日期**: 2026-03-11  
+**更新日期**: 2026-03-25  
 **定位**: 这是给人类使用者看的工作区入口页，帮助你快速理解这个专属助手已经具备什么能力、怎么提问、什么时候需要维护索引或配置 MCP。
 
 ## 1. 这是什么
@@ -29,6 +29,13 @@
 - “当前权威的 DeepCraft 网页 URL 清单是什么？”
 
 对这类自然语言问题，用户**不需要自己手动写检索命令**。
+
+对 **VS Code Copilot**，当前工作区的主初始化入口是：
+
+- `.github/copilot-instructions.md`（自动随工作区加载）
+- `.github/instructions/external-search.instructions.md`（当任务涉及 community / case / MCP / 外部检索时按需发现）
+
+对偏好 `CLAUDE.md` / `AGENTS.md` 的代理，则继续使用根目录初始化文件。
 
 ### 2.2 用户需不需要自己启动 RAG 后台服务
 
@@ -61,7 +68,10 @@ python scripts\verify_ingest.py
 - 一页纸总览：`knowledge/overview.md`
 - 高频问答：`knowledge/faq.md`
 - 工具链摘要：`knowledge/modustoolbox_tools_summary.md`
+- 版本兼容：`knowledge/version_compatibility_guide.md`
+- AI Kit 文档入口：`knowledge/index_ai_kit_guide.md`
 - 使用手册：`knowledge/usage_guide.md`
+- Ready Model 报告目录：`knowledge/ready_models_catalog.md`
 
 ### 3.2 本地 RAG
 
@@ -85,6 +95,7 @@ python scripts\verify_ingest.py
 - 快速理解整个系统：`knowledge/overview.md`
 - 不知道问题该去哪里：`knowledge/document_map.md`
 - 想知道如何提问：`knowledge/usage_guide.md`
+- 想查 Ready Model 申请、收费、测试报告：`knowledge/ready_models_catalog.md`
 - 想了解检索链：`knowledge/retrieval_guide.md`
 - 想知道当前真实状态：`governance/CURRENT_STATUS.md`
 

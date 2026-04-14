@@ -12,11 +12,14 @@
 | 模型生成代码 | `mtb_ml_gen/`（位于示例工程内） | 用于查看生成模型、arena 建议与推理入口 |
 | 示例推理代码 | `Machine_Learning_Imagimob_MTBML_Deploy/source/` | 用于查看集成方式与调用模式 |
 | Face ID 应用代码 | `PSOC_Edge_Machine_Learning_Face_ID_Demo/application_code/` | 用于查看 PSoC Edge 视觉示例入口 |
+| 外部搜索结果列表 | `community_search` / `case_search` | 只拿结果列表，不读正文 |
+| 外部正文读取 | `community_read_article` / `case_read` | 读单篇正文并输出结构化摘要 |
 
 ## 2. 先看哪类文档
 
 - `docs/application_notes/mtb_ml_user_guide.pdf`：TFLM / MTB ML 使用说明
 - `docs/application_notes/ml_modustoolbox_imagimob.pdf`：DEEPCRAFT / Imagimob 到 ModusToolbox 的流程
+- `docs/application_notes/infineon-deepcraft-model-converter-customer-connector-en.pdf`：Model Converter 输入格式、目标设备、GUI/CLI 入口
 - `knowledge/ml_workflow.md`：工作流摘要
 - `knowledge/examples_catalog.md`：示例与路径导航
 

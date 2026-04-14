@@ -82,6 +82,7 @@
 - Ready Models 被定义为可直接接入边缘设备的 production-ready AI/ML 模型。
 - 一条路径是使用预编译 binary / hex 文件快速上板验证。
 - 另一条路径是导入静态库并接入自定义应用，适合已有固件工程继续集成。
+- 当前本地另已归档 8 份 Ready Model 测试 PDF 到 `docs/ready_model_notes/`，并通过 `knowledge/ready_models_catalog.md` 接入导航主链。
 
 ### 2.8 Legal / 合规
 

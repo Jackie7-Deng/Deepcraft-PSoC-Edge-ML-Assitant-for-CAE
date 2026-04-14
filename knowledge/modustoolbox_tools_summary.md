@@ -91,6 +91,27 @@ ModusToolbox 默认从官方服务器找 manifest；如果团队使用自定义 
 - **板卡/项目路径看起来对，但行为还是不对**：优先确认 `TARGET/BSP`，不要把 PSoC Edge 与 PSoC 6 的项目假设混用。`knowledge\faq.md:128-153` `docs\MTB_docs\infineon-modustoolbox-tools-package-user-guide-gettingstarted-en.pdf#44`
 - **明明是 ML 问题，却去 Device Configurator 里找参数**：先分清这是 library-level configurator 还是 device-level configurator 的问题。`docs\MTB_docs\New-to-ModusToolbox.pdf#2`
 
+## 8. 新增的 3.6 / 3.7 release notes 应该怎么用
+
+- 若问题是“为什么 3.6 / 3.7 表现不同”，优先进入 `knowledge\version_compatibility_guide.md`
+- 3.6 重点回答：PSoC Edge 相关 Device Configurator 增强、connected kits、LLVM、`make program -j` 多核已知问题。`docs\release_notes\mt3.6_release_notes.pdf#3` `docs\release_notes\mt3.6_release_notes.pdf#4` `docs\release_notes\mt3.6_release_notes.pdf#15`
+- 3.7 重点回答：`memoryreport`、CAPSENSE pack 拆分、代理问题扩大到全部工具、`.mtb` 依赖 tag 与 BSP Assistant GUI workaround。`docs\release_notes\mt3.7_release_notes.pdf#3` `docs\release_notes\mt3.7_release_notes.pdf#4` `docs\release_notes\mt3.7_release_notes.pdf#6` `docs\release_notes\mt3.7_release_notes.pdf#15`
+
+## 9. 什么时候要跳出当前工作区去看本机 ModusToolbox
+
+如果问题已经明确落到：
+
+- 本机装了哪个 tools package / pack
+- compiler / LLVM / GCC 安装路径
+- manifest / pack / mtb_shared / getlibs 的本机状态
+- VS Code / Eclipse 生成出的 launch / settings / Makefile 状态
+
+则可按需进入：
+
+- `C:\Users\DengJi\ModusToolbox\`
+
+注意：这是**补充证据路径**，不是默认知识层。优先顺序仍是当前仓库知识页和 PDF。
+
 ## 8. 推荐检索路径
 
 1. 先看 `knowledge\modustoolbox_tools_summary.md`，快速判断问题属于哪一层。
