@@ -31,15 +31,15 @@
 | `scripts/build_lightweight_index.py` | 生成 `indexes/lightweight_index.json` |
 | `scripts/search_lightweight_index.py` | 直接查询 lightweight index |
 | `indexes/chunk_schema.md` | lightweight index 的字段契约 |
-| `rag_regression.md` | 轻量 RAG 固定查询回归集 |
+| `governance/rag_regression.md` | 轻量 RAG 固定查询回归集 |
 
 ## 4. MCP 回归与可观测
 
 | 文件 | 作用 |
 |------|------|
-| `mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |
-| `mcp_regression_suite.md` | 回归用例的人类可读说明 |
-| `mcp_observability.md` | MCP 回归落盘字段与 stop rules 说明 |
+| `governance/mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |
+| `governance/mcp_regression_suite.md` | 回归用例的人类可读说明 |
+| `governance/mcp_observability.md` | MCP 回归落盘字段与 stop rules 说明 |
 | `run_mcp_regression.py` | 执行 MCP 回归、输出 summary JSON 与 JSONL 审计日志 |
 
 ## 5. 当前边界

@@ -6,7 +6,7 @@
 - 结构化知识层：`knowledge/`
 - 本地检索 / RAG 层：`indexes/`、`scripts/lightweight_rag.py`
 - 外部检索 / MCP 层：`mcp_servers/infineon_browser_server.py`、`scripts/*_search_playwright.py`
-- 治理 / 回归层：`TODO.md`、`issues_log.md`、`mcp_regression_suite.md`、`mcp_observability.md`
+- 治理 / 回归层：`governance/TODO.md`、`governance/issues_log.md`、`governance/mcp_regression_suite.md`、`governance/mcp_observability.md`
 
 ## 必守规则
 

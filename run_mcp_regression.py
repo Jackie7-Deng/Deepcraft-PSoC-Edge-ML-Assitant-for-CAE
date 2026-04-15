@@ -88,7 +88,7 @@ def run_case(case: dict, cdp_url: str, community_base_url: str, case_base_url: s
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run fixed MCP regressions for Community and MSD/Case search.")
-    parser.add_argument("--suite", default=str(ROOT / "mcp_regression_suite.json"))
+    parser.add_argument("--suite", default=str(ROOT / "governance" / "mcp_regression_suite.json"))
     parser.add_argument("--mode", choices=["all", "community", "case"], default="all")
     parser.add_argument("--cdp-url", default=DEFAULT_CASE_CDP_URL)
     parser.add_argument("--community-base-url", default=DEFAULT_COMMUNITY_BASE_URL)

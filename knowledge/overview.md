@@ -66,9 +66,9 @@
 - 当前状态：`governance/CURRENT_STATUS.md`
 - 当前审计日志：`governance/ASSISTANT_TRAINING_AUDIT_LOG.md`
 - 会话状态：`memory/SESSION_STATE.md`
-- 模板差距分析：`plan_gap_analysis.md`
-- 当前轮唯一进度源：`TODO.md`
-- MCP 回归与可观测：`mcp_regression_suite.md`、`mcp_observability.md`
+- 模板差距分析：`governance/plan_gap_analysis.md`
+- 当前轮唯一进度源：`governance/TODO.md`
+- MCP 回归与可观测：`governance/mcp_regression_suite.md`、`governance/mcp_observability.md`
 - 后续计划：`knowledge/improvement_plan.md`
 
 ## 7. 当前仍待补强的专题
@@ -79,4 +79,4 @@
 - **memory 布局专题已补到本地链条**：新增应用笔记与 CTW 已通过 `knowledge/memory_layout_guide.md` 回灌到知识层，后续回答 memory placement / XIP / linker 问题应优先引用本地 PDF 页码，而不是只引用 community 贴。`docs/application_notes/infineon-an239774-selecting-and-configuring-memories-power-performance-psoc-edge-applicationnotes-en.pdf#1` `docs/application_notes/infineon-psoc-edge-memory-usage-ctw-en.pdf#17`
 - **更细粒度排障案例仍需继续沉淀**：当前排障与 FAQ 已能做一级分诊，但真实日志模式、链接错误、烧录失败、NPU fallback、摄像头链路等二级 runbook 仍需持续扩充。`knowledge/troubleshooting_playbook.md:8-101` `knowledge/improvement_plan.md:6-11`
 - **外部经验回灌入口已补齐，但默认仍应本地优先**：按照训练模板与当前初始化规则，Community / Case 经验默认只作为补充证据，不覆盖 README、源码、PDF 与本地网页镜像。`GENERIC_SPECIALIZED_QA_ASSISTANT_TEMPLATE.md:234-370` `CLAUDE.md:11-17`
-- **新增治理与回归底座**：本轮补了 `TODO.md`、`plan_gap_analysis.md`、`issues_log.md`、`knowledge_governance.md`、`mcp_regression_suite.*`、`mcp_observability.md`、`rag_regression.md` 与 `indexes/chunk_schema.md`，后续回归与补缺应优先落盘到这些文件。
+- **新增治理与回归底座**：本轮补了 `governance/TODO.md`、`governance/plan_gap_analysis.md`、`governance/issues_log.md`、`governance/knowledge_governance.md`、`governance/mcp_regression_suite.*`、`governance/mcp_observability.md`、`governance/rag_regression.md` 与 `indexes/chunk_schema.md`，后续回归与补缺应优先落盘到这些文件。

@@ -21,7 +21,7 @@
 2. **结构化知识层**：`knowledge/`
 3. **本地检索 / RAG 层**：`indexes/`、`scripts/lightweight_rag.py`
 4. **外部检索 / MCP 层**：`mcp_servers/infineon_browser_server.py`、`scripts/*_search_playwright.py`
-5. **治理 / 回归层**：`TODO.md`、`issues_log.md`、`mcp_regression_suite.*`、`mcp_observability.md`
+5. **治理 / 回归层**：`governance/TODO.md`、`governance/issues_log.md`、`governance/mcp_regression_suite.*`、`governance/mcp_observability.md`
 
 ## 3. 资料优先级
 

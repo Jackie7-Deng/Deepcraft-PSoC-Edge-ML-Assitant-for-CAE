@@ -1,6 +1,6 @@
 # PSoC Edge + DEEPCRAFT 专属助手工作区
 
-**更新日期**: 2026-03-25  
+**更新日期**: 2026-04-15  
 **定位**: 这是给人类使用者看的工作区入口页，帮助你快速理解这个专属助手已经具备什么能力、怎么提问、什么时候需要维护索引或配置 MCP。
 
 ## 1. 这是什么
@@ -58,6 +58,8 @@ python scripts\verify_ingest.py
 - 如果某个客户端本身不支持自动托管本地 MCP 子进程，则需要该客户端自己的 MCP 配置流程。
 - 换句话说：**是否需要手动启动 MCP，更取决于客户端能力，而不是当前仓库脚本本身。**
 
+当前与治理 / 回归相关的文档统一放在 `governance/`，避免根目录混乱。
+
 ## 3. 当前已经实现了什么
 
 ### 3.1 角色与知识链
@@ -108,6 +110,12 @@ python scripts\update_kb.py
 python scripts\verify_ingest.py
 python scripts\evaluate_retrieval.py --write-report
 python scripts\evaluate_grounded_answer.py --write-report
+```
+
+如果你修改了 MCP 搜索链或外部检索规则，建议再执行：
+
+```powershell
+python run_mcp_regression.py
 ```
 
 ## 6. 结论

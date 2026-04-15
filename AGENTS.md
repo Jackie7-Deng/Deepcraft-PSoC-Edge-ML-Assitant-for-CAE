@@ -11,7 +11,7 @@
 - 结构化知识层：`knowledge/`
 - 本地检索 / RAG：`indexes/`、`scripts/lightweight_rag.py`
 - 外部检索 / MCP：`mcp_servers/infineon_browser_server.py`
-- 治理 / 回归：`TODO.md`、`issues_log.md`、`mcp_regression_suite.*`
+- 治理 / 回归：`governance/TODO.md`、`governance/issues_log.md`、`governance/mcp_regression_suite.*`
 
 ## 规则
 

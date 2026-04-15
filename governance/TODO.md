@@ -8,13 +8,13 @@
 - [x] 把两份 memory PDF 提炼进 `knowledge/memory_layout_guide.md`
 - [x] 为 lightweight RAG 补 `chunk_schema.md`
 - [x] 为 MCP 补 regression suite / observability / runner
-- [x] 为证据链补 `knowledge_governance.md`、`evidence_scoring.md`、`evidence_arbitrator.py`
+- [x] 为证据链补 `governance/knowledge_governance.md`、`knowledge/evidence_scoring.md`、`scripts/evidence_arbitrator.py`
 
 ## 本轮测试待记录
 
 - [x] 5 条 Community 搜索回归
 - [x] 5 条 MSD/Case 搜索回归
-- [x] 把实际阻碍与脚本缺陷回写到本文件和 `issues_log.md`
+- [x] 把实际阻碍与脚本缺陷回写到本文件和 `governance/issues_log.md`
 
 ## 当前已知阻碍 / 不好用的点
 
@@ -26,7 +26,7 @@
 2. **Case discussion 的 `Load all / Load more` 提取不稳定**
    - 现象：部分 Case 页面按钮存在但不可见或不可点
    - 影响：有时只能拿到 header / description，拿不到完整讨论闭环
-   - 处理：保留问题到 `issues_log.md`，优先做搜索与摘要层增强
+   - 处理：保留问题到 `governance/issues_log.md`，优先做搜索与摘要层增强
 
 3. **Community 泛 query 仍容易偏向 PDF / 产品页**
    - 现象：像 memory / deploy 这类宽 query，结果会被 PDF、产品页和 GitHub 结果抢占

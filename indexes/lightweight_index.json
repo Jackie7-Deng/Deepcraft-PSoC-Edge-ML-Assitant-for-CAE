@@ -1,6 +1,6 @@
 {
   "index_version": 2,
-  "built_at_utc": "2026-04-14T10:50:40.342137+00:00",
+  "built_at_utc": "2026-04-14T13:40:18.595687+00:00",
   "root": "C:\\Users\\DengJi\\Desktop\\workfiles\\16-AI-Agent_for copilot\\PSoC_Edge_DeepCraft_AI",
   "include_pdfs": false,
   "chunk_count": 1145,
@@ -440,7 +440,7 @@
         "copilot"
       ],
       "content_hash": "592533c1c3f4a6c5",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-1",
@@ -448,31 +448,31 @@
       "source_type": "init",
       "title": "2. 这个仓库是怎么训练出来的",
       "anchor": "heading:2",
-      "text": "1. **初始化层**：`CLAUDE.md`、`AGENTS.md`、`.github/copilot-instructions.md`\n2. **结构化知识层**：`knowledge/`\n3. **本地检索 / RAG 层**：`indexes/`、`scripts/lightweight_rag.py`\n4. **外部检索 / MCP 层**：`mcp_servers/infineon_browser_server.py`、`scripts/*_search_playwright.py`\n5. **治理 / 回归层**：`TODO.md`、`issues_log.md`、`mcp_regression_suite.*`、`mcp_observability.md`\n\n## 3. 资料优先级\n\n1. `knowledge\\`\n2. `docs\\`、`docs\\readmes\\`、`ingest\\html\\`、示例工程源码",
+      "text": "1. **初始化层**：`CLAUDE.md`、`AGENTS.md`、`.github/copilot-instructions.md`\n2. **结构化知识层**：`knowledge/`\n3. **本地检索 / RAG 层**：`indexes/`、`scripts/lightweight_rag.py`\n4. **外部检索 / MCP 层**：`mcp_servers/infineon_browser_server.py`、`scripts/*_search_playwright.py`\n5. **治理 / 回归层**：`governance/TODO.md`、`governance/issues_log.md`、`governance/mcp_regression_suite.*`、`governance/mcp_observability.md`\n\n## 3. 资料优先级\n\n1. `knowledge\\`",
       "chunk_index": 1,
       "page": null,
       "start_line": 20,
-      "end_line": 29,
+      "end_line": 28,
       "keywords": [
+        "governance",
         "1.",
-        "2.",
         "3.",
-        "docs",
         "knowledge",
         "scripts",
         "##",
         ".github",
+        "2.",
         "4.",
         "5.",
         "_search_playwright.py",
         "agents.md",
         "claude.md",
         "copilot-instructions.md",
-        "html",
-        "indexes"
+        "indexes",
+        "infineon_browser_server.py"
       ],
-      "content_hash": "66904d743762b1db",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "content_hash": "b389ae88a79d264c",
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-2",
@@ -480,12 +480,13 @@
       "source_type": "init",
       "title": "2. 这个仓库是怎么训练出来的",
       "anchor": "heading:2",
-      "text": "5. **治理 / 回归层**：`TODO.md`、`issues_log.md`、`mcp_regression_suite.*`、`mcp_observability.md`\n\n## 3. 资料优先级\n\n1. `knowledge\\`\n2. `docs\\`、`docs\\readmes\\`、`ingest\\html\\`、示例工程源码\n3. `governance\\`、`knowledge\\community_digest.md`\n4. **仅当问题确实属于 ModusToolbox 本机安装 / 包管理 / manifest / 本地工具路径** 时，再看 `C:\\Users\\DengJi\\ModusToolbox\\`\n5. `【推断/经验】`\n\n## 4. 强制回答规则\n\n- 必须先区分 **PSoC Edge E8x** 与 **PSoC 6 / CY8CKIT-062S2-AI**",
+      "text": "5. **治理 / 回归层**：`governance/TODO.md`、`governance/issues_log.md`、`governance/mcp_regression_suite.*`、`governance/mcp_observability.md`\n\n## 3. 资料优先级\n\n1. `knowledge\\`\n2. `docs\\`、`docs\\readmes\\`、`ingest\\html\\`、示例工程源码\n3. `governance\\`、`knowledge\\community_digest.md`\n4. **仅当问题确实属于 ModusToolbox 本机安装 / 包管理 / manifest / 本地工具路径** 时，再看 `C:\\Users\\DengJi\\ModusToolbox\\`\n5. `【推断/经验】`\n\n## 4. 强制回答规则\n\n- 必须先区分 **PSoC Edge E8x** 与 **PSoC 6 / CY8CKIT-062S2-AI**",
       "chunk_index": 2,
       "page": null,
       "start_line": 24,
       "end_line": 36,
       "keywords": [
+        "governance",
         "##",
         "3.",
         "4.",
@@ -500,11 +501,10 @@
         "6",
         "c",
         "community_digest.md",
-        "cy8ckit-062s2-ai",
-        "dengji"
+        "cy8ckit-062s2-ai"
       ],
-      "content_hash": "0dce41b1b09d9cc4",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "content_hash": "a4e1c2bead27b7ad",
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-3",
@@ -536,7 +536,7 @@
         "fifo"
       ],
       "content_hash": "6d22cd6a9a16d777",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-4",
@@ -568,7 +568,7 @@
         "select"
       ],
       "content_hash": "d01325a78f760c9e",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-5",
@@ -600,7 +600,7 @@
         "troubleshooting_playbook.md"
       ],
       "content_hash": "070907244052233b",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-6",
@@ -632,7 +632,7 @@
         "kit_pse84_ai"
       ],
       "content_hash": "499d5fadcd3ffdc1",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "CLAUDE.md::chunk-7",
@@ -664,7 +664,7 @@
         "version"
       ],
       "content_hash": "e956a350f43462f4",
-      "source_mtime_utc": "2026-04-14T10:42:55.292211+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.906000+00:00"
     },
     {
       "chunk_id": "docs/readmes/README_AnomalousVibrationDetection.md::chunk-0",
@@ -21807,7 +21807,7 @@
         "launch_infineon_mcp_browser.py"
       ],
       "content_hash": "f137f6d6b43baa36",
-      "source_mtime_utc": "2026-04-14T10:04:04.370437+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.940686+00:00"
     },
     {
       "chunk_id": "knowledge/code_map.md::chunk-1",
@@ -21839,7 +21839,7 @@
         "launch_infineon_mcp_browser.py"
       ],
       "content_hash": "9c5feddf1c12a811",
-      "source_mtime_utc": "2026-04-14T10:04:04.370437+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.940686+00:00"
     },
     {
       "chunk_id": "knowledge/code_map.md::chunk-2",
@@ -21871,7 +21871,7 @@
         "pdf"
       ],
       "content_hash": "e82e667e4d904c57",
-      "source_mtime_utc": "2026-04-14T10:04:04.370437+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.940686+00:00"
     },
     {
       "chunk_id": "knowledge/code_map.md::chunk-3",
@@ -21879,7 +21879,7 @@
       "source_type": "knowledge",
       "title": "3. 轻量 RAG",
       "anchor": "heading:3-rag",
-      "text": "| 文件 | 作用 |\n|------|------|\n| `scripts/lightweight_rag.py` | 轻量本地 chunk index 的构建与搜索核心 |\n| `scripts/build_lightweight_index.py` | 生成 `indexes/lightweight_index.json` |\n| `scripts/search_lightweight_index.py` | 直接查询 lightweight index |\n| `indexes/chunk_schema.md` | lightweight index 的字段契约 |\n| `rag_regression.md` | 轻量 RAG 固定查询回归集 |\n\n## 4. MCP 回归与可观测\n\n| 文件 | 作用 |\n|------|------|\n| `mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |",
+      "text": "| 文件 | 作用 |\n|------|------|\n| `scripts/lightweight_rag.py` | 轻量本地 chunk index 的构建与搜索核心 |\n| `scripts/build_lightweight_index.py` | 生成 `indexes/lightweight_index.json` |\n| `scripts/search_lightweight_index.py` | 直接查询 lightweight index |\n| `indexes/chunk_schema.md` | lightweight index 的字段契约 |\n| `governance/rag_regression.md` | 轻量 RAG 固定查询回归集 |\n\n## 4. MCP 回归与可观测\n\n| 文件 | 作用 |\n|------|------|\n| `governance/mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |",
       "chunk_index": 3,
       "page": null,
       "start_line": 28,
@@ -21889,6 +21889,7 @@
         "index",
         "scripts",
         "5",
+        "governance",
         "indexes",
         "lightweight",
         "##",
@@ -21899,11 +21900,10 @@
         "chunk_schema.md",
         "lightweight_index.json",
         "lightweight_rag.py",
-        "mcp",
-        "mcp_regression_suite.json"
+        "mcp"
       ],
-      "content_hash": "fcb623c96f41984a",
-      "source_mtime_utc": "2026-04-14T10:04:04.370437+00:00"
+      "content_hash": "b70ee879478f6de3",
+      "source_mtime_utc": "2026-04-14T13:38:06.940686+00:00"
     },
     {
       "chunk_id": "knowledge/code_map.md::chunk-4",
@@ -21911,14 +21911,14 @@
       "source_type": "knowledge",
       "title": "4. MCP 回归与可观测",
       "anchor": "heading:4-mcp",
-      "text": "|------|------|\n| `mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |\n| `mcp_regression_suite.md` | 回归用例的人类可读说明 |\n| `mcp_observability.md` | MCP 回归落盘字段与 stop rules 说明 |\n| `run_mcp_regression.py` | 执行 MCP 回归、输出 summary JSON 与 JSONL 审计日志 |\n\n## 5. 当前边界\n\n- 当前 `code/` 目录没有已提交源码，因此若用户问“业务逻辑在哪个 `.c/.h`”，多数情况下仍应回到示例工程目录、README 或 `scripts/` / `mcp_servers/`。\n- 若后续将示例工程源码系统化沉淀进 `code/`，建议把本页升级为真正的源码模块地图，而不只是脚本地图。",
+      "text": "| `governance/mcp_regression_suite.json` | 5 条 Community + 5 条 MSD/Case 固定回归用例 |\n| `governance/mcp_regression_suite.md` | 回归用例的人类可读说明 |\n| `governance/mcp_observability.md` | MCP 回归落盘字段与 stop rules 说明 |\n| `run_mcp_regression.py` | 执行 MCP 回归、输出 summary JSON 与 JSONL 审计日志 |\n\n## 5. 当前边界\n\n- 当前 `code/` 目录没有已提交源码，因此若用户问“业务逻辑在哪个 `.c/.h`”，多数情况下仍应回到示例工程目录、README 或 `scripts/` / `mcp_servers/`。\n- 若后续将示例工程源码系统化沉淀进 `code/`，建议把本页升级为真正的源码模块地图，而不只是脚本地图。",
       "chunk_index": 4,
       "page": null,
-      "start_line": 39,
+      "start_line": 40,
       "end_line": 48,
       "keywords": [
+        "governance",
         "-",
-        "------",
         "5",
         "code",
         "mcp",
@@ -21934,8 +21934,8 @@
         "mcp_regression_suite.md",
         "mcp_servers"
       ],
-      "content_hash": "7a1ae98cd6016dd8",
-      "source_mtime_utc": "2026-04-14T10:04:04.370437+00:00"
+      "content_hash": "0f87b9af64cecc49",
+      "source_mtime_utc": "2026-04-14T13:38:06.940686+00:00"
     },
     {
       "chunk_id": "knowledge/community_digest.md::chunk-0",
@@ -23518,7 +23518,7 @@
         "modustoolbox"
       ],
       "content_hash": "7f17ba1f75e907be",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-1",
@@ -23550,7 +23550,7 @@
         "mtb"
       ],
       "content_hash": "bd9f674b5184f5a8",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-2",
@@ -23582,7 +23582,7 @@
         "parameters_catalog.md"
       ],
       "content_hash": "2f7b79a9a9b731d8",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-3",
@@ -23614,7 +23614,7 @@
         "pdf"
       ],
       "content_hash": "08f17d0791ae6f81",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-4",
@@ -23646,7 +23646,7 @@
         "ready_models_catalog.md"
       ],
       "content_hash": "96ceeb6ee7684e61",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-5",
@@ -23678,7 +23678,7 @@
         "text_chunks.jsonl"
       ],
       "content_hash": "b34c8530472d892f",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-6",
@@ -23710,7 +23710,7 @@
         "kit"
       ],
       "content_hash": "72bf52268c4fff81",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-7",
@@ -23742,7 +23742,7 @@
         "usage_guide.md"
       ],
       "content_hash": "a283b5a64ba91443",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-8",
@@ -23772,7 +23772,7 @@
         "usage_guide.md"
       ],
       "content_hash": "af0feddf9deedde3",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-9",
@@ -23804,7 +23804,7 @@
         "text_chunks.jsonl"
       ],
       "content_hash": "dfedde767025c967",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-10",
@@ -23836,7 +23836,7 @@
         "text_chunks.jsonl"
       ],
       "content_hash": "0ee7fac1bfac0a98",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-11",
@@ -23844,11 +23844,11 @@
       "source_type": "knowledge",
       "title": "3. 检索与工具入口",
       "anchor": "heading:3",
-      "text": "- `scripts/evidence_arbitrator.py`\n- `run_mcp_regression.py`\n- `mcp_servers/vector_search_server.py`\n- `scripts/refresh_html_mirror.py`\n\n## 4. 治理与状态入口\n\n- `memory/SESSION_STATE.md`\n- `governance/CURRENT_STATUS.md`\n- `governance/ASSISTANT_TRAINING_AUDIT_LOG.md`\n- `TODO.md`\n- `plan_gap_analysis.md`\n- `issues_log.md`\n- `knowledge_governance.md`\n- `mcp_regression_suite.md`\n- `mcp_observability.md`\n- `rag_regression.md`",
+      "text": "- `scripts/evidence_arbitrator.py`\n- `run_mcp_regression.py`\n- `mcp_servers/vector_search_server.py`\n- `scripts/refresh_html_mirror.py`\n\n## 4. 治理与状态入口\n\n- `memory/SESSION_STATE.md`\n- `governance/CURRENT_STATUS.md`\n- `governance/ASSISTANT_TRAINING_AUDIT_LOG.md`\n- `governance/TODO.md`\n- `governance/plan_gap_analysis.md`\n- `governance/issues_log.md`\n- `governance/knowledge_governance.md`\n- `governance/mcp_regression_suite.md`",
       "chunk_index": 11,
       "page": null,
       "start_line": 69,
-      "end_line": 85,
+      "end_line": 83,
       "keywords": [
         "-",
         "governance",
@@ -23860,15 +23860,15 @@
         "evidence_arbitrator.py",
         "issues_log.md",
         "knowledge_governance.md",
-        "mcp_observability.md",
         "mcp_regression_suite.md",
         "mcp_servers",
         "memory",
         "plan_gap_analysis.md",
-        "rag_regression.md"
+        "refresh_html_mirror.py",
+        "run_mcp_regression.py"
       ],
-      "content_hash": "df750f35a4b2232d",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "content_hash": "8d0c5f2bb7403a24",
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/document_map.md::chunk-12",
@@ -23876,22 +23876,24 @@
       "source_type": "knowledge",
       "title": "4. 治理与状态入口",
       "anchor": "heading:4",
-      "text": "- `knowledge_governance.md`\n- `mcp_regression_suite.md`\n- `mcp_observability.md`\n- `rag_regression.md`\n- `knowledge/improvement_plan.md`",
+      "text": "- `governance/issues_log.md`\n- `governance/knowledge_governance.md`\n- `governance/mcp_regression_suite.md`\n- `governance/mcp_observability.md`\n- `governance/rag_regression.md`\n- `knowledge/improvement_plan.md`",
       "chunk_index": 12,
       "page": null,
-      "start_line": 82,
+      "start_line": 81,
       "end_line": 86,
       "keywords": [
         "-",
+        "governance",
         "improvement_plan.md",
+        "issues_log.md",
         "knowledge",
         "knowledge_governance.md",
         "mcp_observability.md",
         "mcp_regression_suite.md",
         "rag_regression.md"
       ],
-      "content_hash": "759af398f9f934b6",
-      "source_mtime_utc": "2026-04-14T10:48:00.355680+00:00"
+      "content_hash": "5aab3e00660e28f7",
+      "source_mtime_utc": "2026-04-14T13:38:06.925148+00:00"
     },
     {
       "chunk_id": "knowledge/evidence_scoring.md::chunk-0",
@@ -29758,7 +29760,7 @@
         "external-search.instructions.md"
       ],
       "content_hash": "f01b21739efc691c",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-1",
@@ -29790,7 +29792,7 @@
         "mcp_servers"
       ],
       "content_hash": "5e1cd2e1d73388b3",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-2",
@@ -29822,7 +29824,7 @@
         "e8x"
       ],
       "content_hash": "b070f022b57b519e",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-3",
@@ -29854,7 +29856,7 @@
         "manifest"
       ],
       "content_hash": "3146fa2ca73f1af6",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-4",
@@ -29886,7 +29888,7 @@
         "machine"
       ],
       "content_hash": "6c0ace672f26a057",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-5",
@@ -29918,7 +29920,7 @@
         "readme"
       ],
       "content_hash": "5b07c80d1ba37bd3",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-6",
@@ -29950,7 +29952,7 @@
         "modustoolbox_tools_summary.md"
       ],
       "content_hash": "1fcc4e970add1242",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-7",
@@ -29982,7 +29984,7 @@
         "url_success.txt"
       ],
       "content_hash": "584302b11456e722",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-8",
@@ -30014,7 +30016,7 @@
         "grounded"
       ],
       "content_hash": "2d5ebb69b1c8e71a",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-9",
@@ -30022,31 +30024,31 @@
       "source_type": "knowledge",
       "title": "5. 当前网页知识状态",
       "anchor": "heading:5",
-      "text": "- 当前已新增本地 Ready Model 报告目录：`docs/ready_model_notes/`（8 份 PDF），并通过 `knowledge/ready_models_catalog.md` 接入主导航链\n\n## 6. 治理与维护入口\n\n- 当前状态：`governance/CURRENT_STATUS.md`\n- 当前审计日志：`governance/ASSISTANT_TRAINING_AUDIT_LOG.md`\n- 会话状态：`memory/SESSION_STATE.md`\n- 模板差距分析：`plan_gap_analysis.md`\n- 当前轮唯一进度源：`TODO.md`\n- MCP 回归与可观测：`mcp_regression_suite.md`、`mcp_observability.md`\n- 后续计划：`knowledge/improvement_plan.md`",
+      "text": "- 当前已新增本地 Ready Model 报告目录：`docs/ready_model_notes/`（8 份 PDF），并通过 `knowledge/ready_models_catalog.md` 接入主导航链\n\n## 6. 治理与维护入口\n\n- 当前状态：`governance/CURRENT_STATUS.md`\n- 当前审计日志：`governance/ASSISTANT_TRAINING_AUDIT_LOG.md`\n- 会话状态：`memory/SESSION_STATE.md`\n- 模板差距分析：`governance/plan_gap_analysis.md`\n- 当前轮唯一进度源：`governance/TODO.md`\n- MCP 回归与可观测：`governance/mcp_regression_suite.md`、`governance/mcp_observability.md`",
       "chunk_index": 9,
       "page": null,
       "start_line": 62,
-      "end_line": 72,
+      "end_line": 71,
       "keywords": [
         "-",
         "governance",
-        "knowledge",
         "##",
         "6.",
         "8",
         "assistant_training_audit_log.md",
         "current_status.md",
         "docs",
-        "improvement_plan.md",
+        "knowledge",
         "mcp",
         "mcp_observability.md",
         "mcp_regression_suite.md",
         "memory",
         "model",
-        "pdf"
+        "pdf",
+        "plan_gap_analysis.md"
       ],
-      "content_hash": "cbe357be9da168a7",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "content_hash": "99e357100d2108bd",
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-10",
@@ -30054,7 +30056,7 @@
       "source_type": "knowledge",
       "title": "6. 治理与维护入口",
       "anchor": "heading:6",
-      "text": "- MCP 回归与可观测：`mcp_regression_suite.md`、`mcp_observability.md`\n- 后续计划：`knowledge/improvement_plan.md`\n\n## 7. 当前仍待补强的专题\n\n- **generated-code / API 线索仍需细化**：当前 `knowledge/api_reference.md` 已明确自己是入口导览，不是完整 SDK/API 字典，因此后续若要回答更细的生成代码接口或函数签名问题，仍需继续补 `generated-code` 到 API 的映射页。`knowledge/api_reference.md:23-27` `knowledge/improvement_plan.md:6-11`\n- **版本兼容已补出初版专题，但仍不是全覆盖矩阵**：当前已经新增 `knowledge/version_compatibility_guide.md`，能回答 3.6 / 3.7 tools package 变化与常见 workaround；但针对全部 BSP / ML Pack / DEEPCRAFT Studio 组合的完整矩阵仍未成型。`knowledge/version_compatibility_guide.md` `knowledge/parameters_catalog.md`",
+      "text": "- MCP 回归与可观测：`governance/mcp_regression_suite.md`、`governance/mcp_observability.md`\n- 后续计划：`knowledge/improvement_plan.md`\n\n## 7. 当前仍待补强的专题\n\n- **generated-code / API 线索仍需细化**：当前 `knowledge/api_reference.md` 已明确自己是入口导览，不是完整 SDK/API 字典，因此后续若要回答更细的生成代码接口或函数签名问题，仍需继续补 `generated-code` 到 API 的映射页。`knowledge/api_reference.md:23-27` `knowledge/improvement_plan.md:6-11`\n- **版本兼容已补出初版专题，但仍不是全覆盖矩阵**：当前已经新增 `knowledge/version_compatibility_guide.md`，能回答 3.6 / 3.7 tools package 变化与常见 workaround；但针对全部 BSP / ML Pack / DEEPCRAFT Studio 组合的完整矩阵仍未成型。`knowledge/version_compatibility_guide.md` `knowledge/parameters_catalog.md`",
       "chunk_index": 10,
       "page": null,
       "start_line": 71,
@@ -30065,6 +30067,7 @@
         "api",
         "api_reference.md",
         "generated-code",
+        "governance",
         "improvement_plan.md",
         "version_compatibility_guide.md",
         "##",
@@ -30074,11 +30077,10 @@
         "6-11",
         "7.",
         "bsp",
-        "deepcraft",
-        "mcp"
+        "deepcraft"
       ],
-      "content_hash": "f3883aec15603fd1",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "content_hash": "d667a0f0f7440a76",
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-11",
@@ -30110,7 +30112,7 @@
         "layout"
       ],
       "content_hash": "5c73b222141d8c12",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-12",
@@ -30142,7 +30144,7 @@
         "layout"
       ],
       "content_hash": "a4eb202fddc6d5db",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-13",
@@ -30174,7 +30176,7 @@
         "npu"
       ],
       "content_hash": "385fd04285004519",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/overview.md::chunk-14",
@@ -30182,12 +30184,13 @@
       "source_type": "knowledge",
       "title": "7. 当前仍待补强的专题",
       "anchor": "heading:7",
-      "text": "- **更细粒度排障案例仍需继续沉淀**：当前排障与 FAQ 已能做一级分诊，但真实日志模式、链接错误、烧录失败、NPU fallback、摄像头链路等二级 runbook 仍需持续扩充。`knowledge/troubleshooting_playbook.md:8-101` `knowledge/improvement_plan.md:6-11`\n- **外部经验回灌入口已补齐，但默认仍应本地优先**：按照训练模板与当前初始化规则，Community / Case 经验默认只作为补充证据，不覆盖 README、源码、PDF 与本地网页镜像。`GENERIC_SPECIALIZED_QA_ASSISTANT_TEMPLATE.md:234-370` `CLAUDE.md:11-17`\n- **新增治理与回归底座**：本轮补了 `TODO.md`、`plan_gap_analysis.md`、`issues_log.md`、`knowledge_governance.md`、`mcp_regression_suite.*`、`mcp_observability.md`、`rag_regression.md` 与 `indexes/chunk_schema.md`，后续回归与补缺应优先落盘到这些文件。",
+      "text": "- **更细粒度排障案例仍需继续沉淀**：当前排障与 FAQ 已能做一级分诊，但真实日志模式、链接错误、烧录失败、NPU fallback、摄像头链路等二级 runbook 仍需持续扩充。`knowledge/troubleshooting_playbook.md:8-101` `knowledge/improvement_plan.md:6-11`\n- **外部经验回灌入口已补齐，但默认仍应本地优先**：按照训练模板与当前初始化规则，Community / Case 经验默认只作为补充证据，不覆盖 README、源码、PDF 与本地网页镜像。`GENERIC_SPECIALIZED_QA_ASSISTANT_TEMPLATE.md:234-370` `CLAUDE.md:11-17`\n- **新增治理与回归底座**：本轮补了 `governance/TODO.md`、`governance/plan_gap_analysis.md`、`governance/issues_log.md`、`governance/knowledge_governance.md`、`governance/mcp_regression_suite.*`、`governance/mcp_observability.md`、`governance/rag_regression.md` 与 `indexes/chunk_schema.md`，后续回归与补缺应优先落盘到这些文件。",
       "chunk_index": 14,
       "page": null,
       "start_line": 80,
       "end_line": 82,
       "keywords": [
+        "governance",
         "-",
         "knowledge",
         "11-17",
@@ -30202,11 +30205,10 @@
         "improvement_plan.md",
         "indexes",
         "issues_log.md",
-        "knowledge_governance.md",
-        "mcp_observability.md"
+        "knowledge_governance.md"
       ],
-      "content_hash": "cbbbcad8d039fcbc",
-      "source_mtime_utc": "2026-04-14T10:48:00.367722+00:00"
+      "content_hash": "3dcaf5ba57b582fc",
+      "source_mtime_utc": "2026-04-14T13:38:06.932686+00:00"
     },
     {
       "chunk_id": "knowledge/parameters_catalog.md::chunk-0",
